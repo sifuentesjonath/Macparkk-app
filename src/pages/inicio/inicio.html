@@ -1,0 +1,45 @@
+<ion-header no-border>
+    <ion-grid> 
+      <ion-row>    
+        <ion-col col-8 id="iconLH">
+          <button ion-button clear show menuToggle><ion-icon name="menu" id="iconMenu"></ion-icon></button>
+          </ion-col>     
+        <ion-col col-3 id="iconRH"><div><img src="assets/imgs/logo.png" id="iconMLogo"/></div></ion-col>
+      </ion-row>      
+    </ion-grid>
+</ion-header>
+<ion-content id="Fondo" padding>  
+  <ion-grid>          
+      <ion-row align-items-center>
+        <ion-col>
+          <button ion-button color="btnB" block id="btn" (click)="rBoleto()">Registrar Boleto</button>
+        </ion-col>
+      </ion-row>
+      <ion-row align-items-center>
+        <ion-col>
+          <button ion-button color="btnB" block id="btn" (click)="reserv()">Reservación</button>
+        </ion-col>
+      </ion-row>
+      <ion-row align-items-center>
+        <ion-col>
+          <button ion-button color="btnB" block id="btn" (click)="boletoV()">Boleto Virtual</button>
+        </ion-col>
+      </ion-row>
+      <ion-row align-items-center>
+        <ion-col>
+          <button ion-button color="btnB" block id="btn" (click)="UpdaR()">Actualizar Registro</button>
+        </ion-col>
+      </ion-row>
+      <ion-row align-items-center>
+        <ion-col>
+          <button ion-button color="btnB" block id="btn" (click)="promo()">Promociones</button>
+        </ion-col>
+      </ion-row>
+      <br><br>
+      <ion-row align-items-center>
+        <ion-col>
+          <button ion-button color="btnY" block id="btnP" (click)="pedirT()">Pedir Transporte</button>
+        </ion-col>
+      </ion-row>             
+</ion-grid>
+</ion-content>

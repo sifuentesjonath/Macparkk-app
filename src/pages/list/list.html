@@ -1,0 +1,27 @@
+<ion-header no-border>
+    <div>
+      <ion-grid> 
+        <ion-row>    
+          <ion-col col-8 id="iconLH">
+              <button ion-button clear show menuToggle><ion-icon name="menu" id="iconMenu"></ion-icon></button>
+              </ion-col>     
+          <ion-col col-3 id="iconRH"><div><img src="assets/imgs/logo.png" id="iconMLogo"/></div></ion-col>
+        </ion-row>      
+      </ion-grid>
+    </div>
+</ion-header>
+<ion-content id="Fondo">
+  <br><br><br>
+  <ion-list>
+    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">
+      <ion-icon [name]="item.icon" item-start></ion-icon>
+      {{item.title}}
+      <div class="item-note" item-end>
+        {{item.note}}
+      </div>
+    </button>
+  </ion-list>
+  <div *ngIf="selectedItem" padding>
+    You navigated here from <b>{{selectedItem.title}}</b>
+  </div>
+</ion-content>

@@ -1,0 +1,48 @@
+<ion-header no-border>
+    <ion-grid> 
+      <ion-row>    
+        <ion-col col-8 id="iconLH">
+            <button ion-button clear show menuToggle><ion-icon name="menu" id="iconMenu"></ion-icon></button>
+            </ion-col>     
+        <ion-col col-3 id="iconRH"><div><img src="assets/imgs/logo.png" id="iconMLogo"/></div></ion-col>
+      </ion-row>      
+    </ion-grid>
+</ion-header>
+<ion-content id="Fondo">
+  <ion-list> 
+      <ion-grid> 
+          <ion-row align-items-center>
+            <ion-col col-3 id="imgP">
+              <button ion-button icon-only clear id="iconS" (click)="changeImg()">
+                <img  id="imgP" src="{{imgP}}"/>
+              </button>
+            </ion-col>
+          </ion-row> 
+          <ion-row  align-items-center>
+            <ion-col col-9 id="alinacion">  
+              <ion-item id="usu">
+                <ion-label floating>Nombre(s)</ion-label>
+                <ion-input type="text" name="nombre" [(ngModel)]="data.nombre" required></ion-input>
+              </ion-item>
+              <ion-item id="usu">
+                <ion-label floating>Apellidos</ion-label>
+                <ion-input type="text" name="appm" [(ngModel)]="data.appm" required></ion-input>
+              </ion-item>
+              <ion-item id="usu">
+                <ion-label floating>E-mail</ion-label>
+                <ion-input type="text" name="mail" [(ngModel)]="data.mail" required></ion-input>
+              </ion-item>
+              <ion-item id="usu">
+                <ion-label floating>Contraseña</ion-label>
+                <ion-input type="password" name="password" [(ngModel)]="data.password" required></ion-input>
+              </ion-item>                               
+            </ion-col>  
+          </ion-row>
+          <ion-row align-items-center>
+            <ion-col>
+              <button ion-button color="btnB" block round id="btn" (click)="Guardar()">Guardar</button>
+            </ion-col>
+          </ion-row>                       
+      </ion-grid>
+  </ion-list>     
+</ion-content>

@@ -1,0 +1,44 @@
+<ion-menu [content]="content">
+  <ion-header no-border>
+    <ion-toolbar>
+    </ion-toolbar>
+  </ion-header>
+
+  <ion-content>
+      <ion-grid>
+        <br>
+        <ion-row align-items-center>
+          <ion-col col-6 push-3><img src="assets/imgs/perfil.png" id="imgR"/></ion-col>
+        </ion-row>
+        <ion-row align-items-center id="usu">
+          <button menuClose ion-button clear color="grey" (click)="openPage(x=0)">Editar perfil</button>
+        </ion-row>        
+      </ion-grid>
+    <ion-list> 
+      <ion-grid>
+        <ion-row align-items-center>
+          <button menuClose ion-button clear color="grey" id="menuL" (click)="openPage(x=1)">Inicio</button>
+        </ion-row>
+        <ion-row align-items-center>
+          <button menuClose ion-button clear color="grey" id="menuL" (click)="openPage(x=2)">Recibos</button>
+        </ion-row>
+        <ion-row align-items-center>
+          <button menuClose ion-button clear color="grey" id="menuL" (click)="openPage(x=3)">Facturación</button>
+        </ion-row>
+        <ion-row align-items-center>
+          <button menuClose ion-button clear color="grey" id="menuL" (click)="openPage(x=4)">Ayuda</button>
+        </ion-row>
+        <ion-row align-items- id="margen">
+          <button menuClose ion-button clear color="grey" id="menuLS" (click)="openPage(x=5)">Terminos y Condiciones</button>
+        </ion-row>
+        <ion-row align-items- id="margen0">
+          <button menuClose ion-button clear color="grey" id="menuLS" (click)="openPage(x=6)">Aviso de Privacidad</button>
+        </ion-row>
+      </ion-grid>
+    </ion-list>
+  </ion-content>
+
+</ion-menu>
+
+<!-- Disable swipe-to-go-back because it's poor UX to combine STGB with side menus -->
+<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>

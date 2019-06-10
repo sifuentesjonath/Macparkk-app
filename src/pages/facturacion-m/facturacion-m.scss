@@ -1,0 +1,17 @@
+page-facturacion-m {
+    #caja {
+        margin:0px auto 20px auto;	
+        border:1px solid #417ABD;
+        height:30px;
+        width: 250px;
+     }
+     ion-select {
+        background: url('../../assets/imgs/flechaD.png');
+        height: 20px;
+        width:  20px;
+        -moz-appearance: none;
+        -webkit-appearance: none;
+        appearance: none;
+        
+     }
+}
