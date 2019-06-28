@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\Gusma\\Documents\\Ionic\\MACP\\MACPARKK\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "C:\\Users\\Gusma\\Documents\\macparkk-app\\platforms\\android\\app\\build\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
                     "source": "C:\\Users\\Gusma\\.gradle\\caches\\transforms-1\\files-1.1\\support-media-compat-27.1.1.aar\\ab81676c201483493a7e8619620250cc\\res\\values-v21\\values-v21.xml",

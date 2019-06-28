@@ -1,14 +1,14 @@
 webpackJsonp([13],{
 
-/***/ 343:
+/***/ 333:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "BoletoVPageModule", function() { return BoletoVPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "FacturacionMPageModule", function() { return FacturacionMPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__boleto_v__ = __webpack_require__(121);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__facturacion_m__ = __webpack_require__(116);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var BoletoVPageModule = /** @class */ (function () {
-    function BoletoVPageModule() {
+var FacturacionMPageModule = /** @class */ (function () {
+    function FacturacionMPageModule() {
     }
-    BoletoVPageModule = __decorate([
+    FacturacionMPageModule = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__boleto_v__["a" /* BoletoVPage */],
+                __WEBPACK_IMPORTED_MODULE_2__facturacion_m__["a" /* FacturacionMPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__boleto_v__["a" /* BoletoVPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__facturacion_m__["a" /* FacturacionMPage */]),
             ],
         })
-    ], BoletoVPageModule);
-    return BoletoVPageModule;
+    ], FacturacionMPageModule);
+    return FacturacionMPageModule;
 }());
 
-//# sourceMappingURL=boleto-v.module.js.map
+//# sourceMappingURL=facturacion-m.module.js.map
 
 /***/ })
 
