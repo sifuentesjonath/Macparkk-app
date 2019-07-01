@@ -17,30 +17,32 @@
                 <img  id="imgP" src="{{imgP}}"/>
               </button>
             </ion-col>
-          </ion-row> 
-          <ion-row  align-items-center>
-            <ion-col col-9 id="alinacion">  
-              <ion-item id="usu">
-                <ion-label floating>Nombre(s)</ion-label>
-                <ion-input type="text" name="nombre" [(ngModel)]="data.nombre" required></ion-input>
-              </ion-item>
-              <ion-item id="usu">
-                <ion-label floating>Apellidos</ion-label>
-                <ion-input type="text" name="appm" [(ngModel)]="data.appm" required></ion-input>
-              </ion-item>
-              <ion-item id="usu">
-                <ion-label floating>E-mail</ion-label>
-                <ion-input type="text" name="mail" [(ngModel)]="data.mail" required></ion-input>
-              </ion-item>
-              <ion-item id="usu">
-                <ion-label floating>Contraseña</ion-label>
-                <ion-input type="password" name="password" [(ngModel)]="data.password" required></ion-input>
-              </ion-item>                               
-            </ion-col>  
           </ion-row>
+          <form [formGroup]="data" (ngSubmit)="Save()" novalidate>   
+            <ion-row  align-items-center>
+              <ion-col col-9 id="alinacion">  
+                <ion-item id="usu">
+                  <ion-label floating>Nombre(s)</ion-label>
+                  <ion-input type="text" name="nombre" formControlName="nombre" value="{{nombre}}" required></ion-input>
+                </ion-item>
+                <ion-item id="usu">
+                  <ion-label floating>Apellidos</ion-label>
+                  <ion-input type="text" name="appm" formControlName="appm" value="{{appm}}" required></ion-input>
+                </ion-item>
+                <ion-item id="usu">
+                  <ion-label floating>Mail</ion-label>
+                  <ion-input type="text" name="mail" formControlName="mail" value="{{mail}}" required></ion-input>
+                </ion-item>
+                <ion-item id="usu">
+                  <ion-label floating>Contraseña</ion-label>
+                  <ion-input type="password" name="password" formControlName="password" required></ion-input>
+                </ion-item>                               
+              </ion-col>  
+            </ion-row>
+          </form>  
           <ion-row align-items-center>
             <ion-col>
-              <button ion-button color="btnB" block round id="btn" (click)="Guardar()">Guardar</button>
+              <button ion-button color="btnB" block round id="btn" [disabled]="data.invalid">Guardar</button>
             </ion-col>
           </ion-row>                       
       </ion-grid>

@@ -64,6 +64,9 @@ export class LoginPage {
       else if(res['state']===true){ 
         loading.dismiss();
         this.storage.set('confirmed',res['mail']);
+        this.storage.set('client_n',res['name']);
+        this.storage.set('client_sur',res['surname']);
+        this.storage.set('pass_o',res['clave']);
         this.storage.set('client_name',res['name']+' '+res['surname']);
         if(res['level']==0){
           this.storage.set('client_privilege',res['level']);

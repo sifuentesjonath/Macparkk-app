@@ -91,6 +91,45 @@ var AyudaMPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FacturacionMPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var FacturacionMPage = /** @class */ (function () {
+    function FacturacionMPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    FacturacionMPage.prototype.ionViewDidLoad = function () {
+        //console.log('ionViewDidLoad FacturacionMPage');
+    };
+    FacturacionMPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-facturacion-m',template:/*ion-inline-start:"C:\Users\Gusma\Documents\macparkk-app\src\pages\facturacion-m\facturacion-m.html"*/'<ion-header no-border>\n\n    <ion-grid> \n\n      <ion-row>    \n\n        <ion-col col-8 id="iconLH">\n\n            <button ion-button clear show menuToggle><ion-icon name="menu" id="iconMenu"></ion-icon></button>\n\n            </ion-col>     \n\n        <ion-col col-3 id="iconRH"><div><img src="assets/imgs/logo.png" id="iconMLogo"/></div></ion-col>\n\n      </ion-row>      \n\n    </ion-grid>\n\n</ion-header>\n\n<ion-content id="Fondo" padding>  \n\n  <ion-grid>     \n\n  <ion-list>     \n\n      <ion-row align-items-center>\n\n        <ion-col id="btnL">\n\n          <h1>Facturación</h1>\n\n        </ion-col>\n\n      </ion-row>\n\n      <br>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n          <button ion-button color="btnB" block round id="btn" (click)="RFC()">Registrar R.F.C</button>\n\n        </ion-col>\n\n      </ion-row>\n\n      <br><br>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n            <ion-item id="caja"> \n\n              <ion-label>Seleccionar...</ion-label>\n\n              <ion-select [(ngModel)]="Seleccion">\n\n                <ion-option value="R">R.F.C</ion-option>\n\n                <ion-option value="C">CURP</ion-option>\n\n              </ion-select>\n\n            </ion-item>\n\n        </ion-col>    \n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n          <ion-item id="caja"> \n\n            <ion-label>Concepto...</ion-label>\n\n              <ion-select [(ngModel)]="Seleccion">\n\n                <ion-option value="R">Datos1</ion-option>\n\n                <ion-option value="C">Datos2</ion-option>\n\n              </ion-select>\n\n          </ion-item>\n\n        </ion-col>\n\n      </ion-row>\n\n      <br><br><br>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n          <button ion-button color="btnB" block  id="btn" (click)="enviar()">Enviar</button>\n\n        </ion-col>\n\n      </ion-row>            \n\n  </ion-list>\n\n</ion-grid>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Gusma\Documents\macparkk-app\src\pages\facturacion-m\facturacion-m.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
+    ], FacturacionMPage);
+    return FacturacionMPage;
+}());
+
+//# sourceMappingURL=facturacion-m.js.map
+
+/***/ }),
+
+/***/ 116:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return BoletoVPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
@@ -132,45 +171,6 @@ var BoletoVPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=boleto-v.js.map
-
-/***/ }),
-
-/***/ 116:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return FacturacionMPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var FacturacionMPage = /** @class */ (function () {
-    function FacturacionMPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    FacturacionMPage.prototype.ionViewDidLoad = function () {
-        //console.log('ionViewDidLoad FacturacionMPage');
-    };
-    FacturacionMPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-facturacion-m',template:/*ion-inline-start:"C:\Users\Gusma\Documents\macparkk-app\src\pages\facturacion-m\facturacion-m.html"*/'<ion-header no-border>\n\n    <ion-grid> \n\n      <ion-row>    \n\n        <ion-col col-8 id="iconLH">\n\n            <button ion-button clear show menuToggle><ion-icon name="menu" id="iconMenu"></ion-icon></button>\n\n            </ion-col>     \n\n        <ion-col col-3 id="iconRH"><div><img src="assets/imgs/logo.png" id="iconMLogo"/></div></ion-col>\n\n      </ion-row>      \n\n    </ion-grid>\n\n</ion-header>\n\n<ion-content id="Fondo" padding>  \n\n  <ion-grid>     \n\n  <ion-list>     \n\n      <ion-row align-items-center>\n\n        <ion-col id="btnL">\n\n          <h1>Facturación</h1>\n\n        </ion-col>\n\n      </ion-row>\n\n      <br>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n          <button ion-button color="btnB" block round id="btn" (click)="RFC()">Registrar R.F.C</button>\n\n        </ion-col>\n\n      </ion-row>\n\n      <br><br>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n            <ion-item id="caja"> \n\n              <ion-label>Seleccionar...</ion-label>\n\n              <ion-select [(ngModel)]="Seleccion">\n\n                <ion-option value="R">R.F.C</ion-option>\n\n                <ion-option value="C">CURP</ion-option>\n\n              </ion-select>\n\n            </ion-item>\n\n        </ion-col>    \n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n          <ion-item id="caja"> \n\n            <ion-label>Concepto...</ion-label>\n\n              <ion-select [(ngModel)]="Seleccion">\n\n                <ion-option value="R">Datos1</ion-option>\n\n                <ion-option value="C">Datos2</ion-option>\n\n              </ion-select>\n\n          </ion-item>\n\n        </ion-col>\n\n      </ion-row>\n\n      <br><br><br>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n          <button ion-button color="btnB" block  id="btn" (click)="enviar()">Enviar</button>\n\n        </ion-col>\n\n      </ion-row>            \n\n  </ion-list>\n\n</ion-grid>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Gusma\Documents\macparkk-app\src\pages\facturacion-m\facturacion-m.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
-    ], FacturacionMPage);
-    return FacturacionMPage;
-}());
-
-//# sourceMappingURL=facturacion-m.js.map
 
 /***/ }),
 
@@ -400,6 +400,96 @@ var PedirTPage = /** @class */ (function () {
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RecibosMPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the RecibosMPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var RecibosMPage = /** @class */ (function () {
+    function RecibosMPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    RecibosMPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad RecibosMPage');
+    };
+    RecibosMPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-recibos-m',template:/*ion-inline-start:"C:\Users\Gusma\Documents\macparkk-app\src\pages\recibos-m\recibos-m.html"*/'<ion-header no-border>\n\n    <ion-grid> \n\n      <ion-row>    \n\n        <ion-col col-8 id="iconLH">\n\n            <button ion-button clear show menuToggle><ion-icon name="menu" id="iconMenu"></ion-icon></button>\n\n            </ion-col>     \n\n        <ion-col col-3 id="iconRH"><div><img src="assets/imgs/logo.png" id="iconMLogo"/></div></ion-col>\n\n      </ion-row>      \n\n    </ion-grid>\n\n</ion-header>\n\n<ion-content id="Fondo" padding>  \n\n  <ion-grid>     \n\n  <ion-list>     \n\n      <ion-row align-items-center>\n\n        <ion-col id="btnL">\n\n          <h1>Recibos</h1>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>\n\n      <br><br>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>             \n\n  </ion-list>\n\n</ion-grid>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Gusma\Documents\macparkk-app\src\pages\recibos-m\recibos-m.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
+    ], RecibosMPage);
+    return RecibosMPage;
+}());
+
+//# sourceMappingURL=recibos-m.js.map
+
+/***/ }),
+
+/***/ 123:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TerminosCPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the TerminosCPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var TerminosCPage = /** @class */ (function () {
+    function TerminosCPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    TerminosCPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad TerminosCPage');
+    };
+    TerminosCPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-terminos-c',template:/*ion-inline-start:"C:\Users\Gusma\Documents\macparkk-app\src\pages\terminos-c\terminos-c.html"*/'<ion-header no-border>\n\n  <ion-grid> \n\n    <ion-row>    \n\n      <ion-col col-8 id="iconLH">\n\n          <button ion-button clear show menuToggle><ion-icon name="menu" id="iconMenu"></ion-icon></button>\n\n          </ion-col>     \n\n      <ion-col col-3 id="iconRH"><div><img src="assets/imgs/logo.png" id="iconMLogo"/></div></ion-col>\n\n    </ion-row>      \n\n  </ion-grid>\n\n</ion-header>\n\n<ion-content id="Fondo" padding>\n\n  <ion-grid>\n\n\n\n  </ion-grid>    \n\n</ion-content>'/*ion-inline-end:"C:\Users\Gusma\Documents\macparkk-app\src\pages\terminos-c\terminos-c.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
+    ], TerminosCPage);
+    return TerminosCPage;
+}());
+
+//# sourceMappingURL=terminos-c.js.map
+
+/***/ }),
+
+/***/ 124:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ResPasswordPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
@@ -477,7 +567,7 @@ var ResPasswordPage = /** @class */ (function () {
 
 /***/ }),
 
-/***/ 123:
+/***/ 125:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -487,6 +577,9 @@ var ResPasswordPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_file_transfer__ = __webpack_require__(183);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__ = __webpack_require__(184);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_native_file__ = __webpack_require__(185);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_forms__ = __webpack_require__(13);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__angular_common_http__ = __webpack_require__(51);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_storage__ = __webpack_require__(89);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -501,23 +594,92 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+ //conexión
+ //Manejo de cache
 var PerfilEPage = /** @class */ (function () {
-    function PerfilEPage(navCtrl, navParams, camara, transfer, file, loadingCtrl) {
+    function PerfilEPage(storage, http, alertCtrl, fb, navCtrl, navParams, camara, transfer, file, loadingCtrl) {
+        this.storage = storage;
+        this.http = http;
+        this.alertCtrl = alertCtrl;
+        this.fb = fb;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
         this.camara = camara;
         this.transfer = transfer;
         this.file = file;
         this.loadingCtrl = loadingCtrl;
-        this.data = {};
+        //data:any={};
+        this.nombre = '';
+        this.appm = '';
+        this.mail = '';
+        this.password_o = '';
         this.imgP = 'assets/imgs/perfil.png';
-        this.data.nombre = '';
-        this.data.appm = '';
-        this.data.mail = '';
-        this.data.password = '';
+        this.data = this.fb.group({
+            nombre: ['', [__WEBPACK_IMPORTED_MODULE_5__angular_forms__["f" /* Validators */].required]],
+            appm: ['', [__WEBPACK_IMPORTED_MODULE_5__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_5__angular_forms__["f" /* Validators */].minLength(5), __WEBPACK_IMPORTED_MODULE_5__angular_forms__["f" /* Validators */].maxLength(25)]],
+            mail: ['', [__WEBPACK_IMPORTED_MODULE_5__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_5__angular_forms__["f" /* Validators */].email]],
+            password: ['', [__WEBPACK_IMPORTED_MODULE_5__angular_forms__["f" /* Validators */].required, __WEBPACK_IMPORTED_MODULE_5__angular_forms__["f" /* Validators */].pattern(/^[a-z0-9_-]{8,18}$/)]],
+        });
     }
-    PerfilEPage.prototype.ionViewDidLoad = function () {
-        //console.log('ionViewDidLoad PerfilEPage');
+    //Metodos
+    PerfilEPage.prototype.ionViewCanEnter = function () {
+        var _this = this;
+        this.storage.get('confirmed').then(function (res_confirmed) {
+            _this.storage.get('client_n').then(function (res_nombre) {
+                _this.storage.get('client_sur').then(function (res_apellido) {
+                    _this.storage.get('pass_o').then(function (res_pass) {
+                        var loading = _this.loadingCtrl.create({
+                            content: 'Cargando...'
+                        });
+                        loading.present();
+                        var url = 'http://138.68.48.252:3000/Api/users/edit_profile';
+                        //var password=Md5.init(this.data.value.password);
+                        var body = JSON.stringify({ nombre: res_nombre, apellido: res_apellido, correo: res_confirmed });
+                        _this.http.post(url, body, { headers: { 'Content-Type': 'application/json' } }).subscribe(function (res) {
+                            if (res['state'] === false) {
+                                var error = _this.alertCtrl.create({
+                                    title: 'Aviso',
+                                    message: "Usuario o contraseña incorrecta,por favor intentelo de nuevo",
+                                    buttons: ['Entendido']
+                                });
+                                error.present();
+                                loading.dismiss();
+                            }
+                            else if (res['state'] === true) {
+                                loading.dismiss();
+                                _this.nombre = res['name'];
+                                _this.appm = res['surname'];
+                                _this.mail = res['mail'];
+                                _this.password_o = res_pass;
+                                //this.storage.set('confirmed',res['mail']);
+                                //this.storage.set('client_name',res['name']+' '+res['surname']);
+                            }
+                            else if (res['verificado'] == false) {
+                                var error = _this.alertCtrl.create({
+                                    title: 'Aviso',
+                                    message: "Antes de ingresar porfavor verifique su correo.",
+                                    buttons: ['Entendido']
+                                });
+                                error.present();
+                                loading.dismiss();
+                            }
+                            else {
+                                loading.dismiss();
+                            }
+                        }, function (err) {
+                            var error = _this.alertCtrl.create({
+                                title: 'Alerta',
+                                message: "Datos no obtenidos.",
+                                buttons: ['Entendido']
+                            });
+                            error.present();
+                            loading.dismiss();
+                        });
+                    });
+                });
+            });
+        });
     };
     PerfilEPage.prototype.changeImg = function () {
         var _this = this;
@@ -538,107 +700,19 @@ var PerfilEPage = /** @class */ (function () {
             // Handle error
         });
     };
-    PerfilEPage.prototype.Guardar = function () { };
+    PerfilEPage.prototype.Save = function () {
+    };
     PerfilEPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-perfil-e',template:/*ion-inline-start:"C:\Users\Gusma\Documents\macparkk-app\src\pages\perfil-e\perfil-e.html"*/'<ion-header no-border>\n\n    <ion-grid> \n\n      <ion-row>    \n\n        <ion-col col-8 id="iconLH">\n\n            <button ion-button clear show menuToggle><ion-icon name="menu" id="iconMenu"></ion-icon></button>\n\n            </ion-col>     \n\n        <ion-col col-3 id="iconRH"><div><img src="assets/imgs/logo.png" id="iconMLogo"/></div></ion-col>\n\n      </ion-row>      \n\n    </ion-grid>\n\n</ion-header>\n\n<ion-content id="Fondo">\n\n  <ion-list> \n\n      <ion-grid> \n\n          <ion-row align-items-center>\n\n            <ion-col col-3 id="imgP">\n\n              <button ion-button icon-only clear id="iconS" (click)="changeImg()">\n\n                <img  id="imgP" src="{{imgP}}"/>\n\n              </button>\n\n            </ion-col>\n\n          </ion-row> \n\n          <ion-row  align-items-center>\n\n            <ion-col col-9 id="alinacion">  \n\n              <ion-item id="usu">\n\n                <ion-label floating>Nombre(s)</ion-label>\n\n                <ion-input type="text" name="nombre" [(ngModel)]="data.nombre" required></ion-input>\n\n              </ion-item>\n\n              <ion-item id="usu">\n\n                <ion-label floating>Apellidos</ion-label>\n\n                <ion-input type="text" name="appm" [(ngModel)]="data.appm" required></ion-input>\n\n              </ion-item>\n\n              <ion-item id="usu">\n\n                <ion-label floating>E-mail</ion-label>\n\n                <ion-input type="text" name="mail" [(ngModel)]="data.mail" required></ion-input>\n\n              </ion-item>\n\n              <ion-item id="usu">\n\n                <ion-label floating>Contraseña</ion-label>\n\n                <ion-input type="password" name="password" [(ngModel)]="data.password" required></ion-input>\n\n              </ion-item>                               \n\n            </ion-col>  \n\n          </ion-row>\n\n          <ion-row align-items-center>\n\n            <ion-col>\n\n              <button ion-button color="btnB" block round id="btn" (click)="Guardar()">Guardar</button>\n\n            </ion-col>\n\n          </ion-row>                       \n\n      </ion-grid>\n\n  </ion-list>     \n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Gusma\Documents\macparkk-app\src\pages\perfil-e\perfil-e.html"*/,
+            selector: 'page-perfil-e',template:/*ion-inline-start:"C:\Users\Gusma\Documents\macparkk-app\src\pages\perfil-e\perfil-e.html"*/'<ion-header no-border>\n\n    <ion-grid> \n\n      <ion-row>    \n\n        <ion-col col-8 id="iconLH">\n\n            <button ion-button clear show menuToggle><ion-icon name="menu" id="iconMenu"></ion-icon></button>\n\n            </ion-col>     \n\n        <ion-col col-3 id="iconRH"><div><img src="assets/imgs/logo.png" id="iconMLogo"/></div></ion-col>\n\n      </ion-row>      \n\n    </ion-grid>\n\n</ion-header>\n\n<ion-content id="Fondo">\n\n  <ion-list> \n\n      <ion-grid> \n\n          <ion-row align-items-center>\n\n            <ion-col col-3 id="imgP">\n\n              <button ion-button icon-only clear id="iconS" (click)="changeImg()">\n\n                <img  id="imgP" src="{{imgP}}"/>\n\n              </button>\n\n            </ion-col>\n\n          </ion-row>\n\n          <form [formGroup]="data" (ngSubmit)="Save()" novalidate>   \n\n            <ion-row  align-items-center>\n\n              <ion-col col-9 id="alinacion">  \n\n                <ion-item id="usu">\n\n                  <ion-label floating>Nombre(s)</ion-label>\n\n                  <ion-input type="text" name="nombre" formControlName="nombre" value="{{nombre}}" required></ion-input>\n\n                </ion-item>\n\n                <ion-item id="usu">\n\n                  <ion-label floating>Apellidos</ion-label>\n\n                  <ion-input type="text" name="appm" formControlName="appm" value="{{appm}}" required></ion-input>\n\n                </ion-item>\n\n                <ion-item id="usu">\n\n                  <ion-label floating>Mail</ion-label>\n\n                  <ion-input type="text" name="mail" formControlName="mail" value="{{mail}}" required></ion-input>\n\n                </ion-item>\n\n                <ion-item id="usu">\n\n                  <ion-label floating>Contraseña</ion-label>\n\n                  <ion-input type="password" name="password" formControlName="password" required></ion-input>\n\n                </ion-item>                               \n\n              </ion-col>  \n\n            </ion-row>\n\n          </form>  \n\n          <ion-row align-items-center>\n\n            <ion-col>\n\n              <button ion-button color="btnB" block round id="btn" [disabled]="data.invalid">Guardar</button>\n\n            </ion-col>\n\n          </ion-row>                       \n\n      </ion-grid>\n\n  </ion-list>     \n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Gusma\Documents\macparkk-app\src\pages\perfil-e\perfil-e.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__["a" /* Camera */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_file_transfer__["a" /* FileTransfer */], __WEBPACK_IMPORTED_MODULE_4__ionic_native_file__["a" /* File */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_7__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_7__ionic_storage__["b" /* Storage */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_6__angular_common_http__["a" /* HttpClient */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_5__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__angular_forms__["a" /* FormBuilder */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__["a" /* Camera */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_camera__["a" /* Camera */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_file_transfer__["a" /* FileTransfer */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_file_transfer__["a" /* FileTransfer */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_native_file__["a" /* File */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_native_file__["a" /* File */]) === "function" && _j || Object, typeof (_k = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _k || Object])
     ], PerfilEPage);
     return PerfilEPage;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j, _k;
 }());
 
 //# sourceMappingURL=perfil-e.js.map
-
-/***/ }),
-
-/***/ 124:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RecibosMPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the RecibosMPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var RecibosMPage = /** @class */ (function () {
-    function RecibosMPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    RecibosMPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad RecibosMPage');
-    };
-    RecibosMPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-recibos-m',template:/*ion-inline-start:"C:\Users\Gusma\Documents\macparkk-app\src\pages\recibos-m\recibos-m.html"*/'<ion-header no-border>\n\n    <ion-grid> \n\n      <ion-row>    \n\n        <ion-col col-8 id="iconLH">\n\n            <button ion-button clear show menuToggle><ion-icon name="menu" id="iconMenu"></ion-icon></button>\n\n            </ion-col>     \n\n        <ion-col col-3 id="iconRH"><div><img src="assets/imgs/logo.png" id="iconMLogo"/></div></ion-col>\n\n      </ion-row>      \n\n    </ion-grid>\n\n</ion-header>\n\n<ion-content id="Fondo" padding>  \n\n  <ion-grid>     \n\n  <ion-list>     \n\n      <ion-row align-items-center>\n\n        <ion-col id="btnL">\n\n          <h1>Recibos</h1>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>\n\n      <br><br>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>             \n\n  </ion-list>\n\n</ion-grid>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Gusma\Documents\macparkk-app\src\pages\recibos-m\recibos-m.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
-    ], RecibosMPage);
-    return RecibosMPage;
-}());
-
-//# sourceMappingURL=recibos-m.js.map
-
-/***/ }),
-
-/***/ 125:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return TerminosCPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the TerminosCPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var TerminosCPage = /** @class */ (function () {
-    function TerminosCPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    TerminosCPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad TerminosCPage');
-    };
-    TerminosCPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-terminos-c',template:/*ion-inline-start:"C:\Users\Gusma\Documents\macparkk-app\src\pages\terminos-c\terminos-c.html"*/'<ion-header no-border>\n\n  <ion-grid> \n\n    <ion-row>    \n\n      <ion-col col-8 id="iconLH">\n\n          <button ion-button clear show menuToggle><ion-icon name="menu" id="iconMenu"></ion-icon></button>\n\n          </ion-col>     \n\n      <ion-col col-3 id="iconRH"><div><img src="assets/imgs/logo.png" id="iconMLogo"/></div></ion-col>\n\n    </ion-row>      \n\n  </ion-grid>\n\n</ion-header>\n\n<ion-content id="Fondo" padding>\n\n  <ion-grid>\n\n\n\n  </ion-grid>    \n\n</ion-content>'/*ion-inline-end:"C:\Users\Gusma\Documents\macparkk-app\src\pages\terminos-c\terminos-c.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
-    ], TerminosCPage);
-    return TerminosCPage;
-}());
-
-//# sourceMappingURL=terminos-c.js.map
 
 /***/ }),
 
@@ -672,11 +746,11 @@ var map = {
 		15
 	],
 	"../pages/boleto-v/boleto-v.module": [
-		332,
+		333,
 		14
 	],
 	"../pages/facturacion-m/facturacion-m.module": [
-		333,
+		332,
 		13
 	],
 	"../pages/inicio/inicio.module": [
@@ -684,51 +758,51 @@ var map = {
 		12
 	],
 	"../pages/login/login.module": [
-		335,
+		346,
 		11
 	],
 	"../pages/main/main.module": [
-		336,
+		335,
 		10
 	],
 	"../pages/pedir-t/pedir-t.module": [
-		337,
+		336,
 		9
 	],
 	"../pages/perfil-e/perfil-e.module": [
-		338,
+		344,
 		8
 	],
 	"../pages/promociones/promociones.module": [
-		339,
+		337,
 		7
 	],
 	"../pages/recibos-m/recibos-m.module": [
-		340,
+		338,
 		6
 	],
 	"../pages/registrar-b/registrar-b.module": [
-		341,
+		339,
 		5
 	],
 	"../pages/registrarse/registrarse.module": [
-		342,
+		343,
 		4
 	],
 	"../pages/registro-u/registro-u.module": [
-		343,
+		340,
 		3
 	],
 	"../pages/res-password/res-password.module": [
-		344,
+		345,
 		2
 	],
 	"../pages/reservacion-b/reservacion-b.module": [
-		345,
+		341,
 		1
 	],
 	"../pages/terminos-c/terminos-c.module": [
-		346,
+		342,
 		0
 	]
 };
@@ -756,7 +830,7 @@ module.exports = webpackAsyncContext;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__pages_login_login__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_registrarse_registrarse__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__pages_registrarse_registrarse__ = __webpack_require__(58);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -842,19 +916,19 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_home_home__ = __webpack_require__(231);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_15__pages_list_list__ = __webpack_require__(329);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_16__pages_login_login__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_registrarse_registrarse__ = __webpack_require__(57);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_res_password_res_password__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_17__pages_registrarse_registrarse__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_res_password_res_password__ = __webpack_require__(124);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_inicio_inicio__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_recibos_m_recibos_m__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_facturacion_m_facturacion_m__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_recibos_m_recibos_m__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_facturacion_m_facturacion_m__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_ayuda_m_ayuda_m__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_perfil_e_perfil_e__ = __webpack_require__(123);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_terminos_c_terminos_c__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_perfil_e_perfil_e__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_terminos_c_terminos_c__ = __webpack_require__(123);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_aviso_p_aviso_p__ = __webpack_require__(113);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_main_main__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_main_main__ = __webpack_require__(57);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_registrar_b_registrar_b__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_reservacion_b_reservacion_b__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_boleto_v_boleto_v__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_boleto_v_boleto_v__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_30__pages_registro_u_registro_u__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_31__pages_promociones_promociones__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_32__pages_pedir_t_pedir_t__ = __webpack_require__(121);
@@ -937,21 +1011,21 @@ var AppModule = /** @class */ (function () {
                     links: [
                         { loadChildren: '../pages/aviso-p/aviso-p.module#AvisoPPageModule', name: 'AvisoPPage', segment: 'aviso-p', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/ayuda-m/ayuda-m.module#AyudaMPageModule', name: 'AyudaMPage', segment: 'ayuda-m', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/boleto-v/boleto-v.module#BoletoVPageModule', name: 'BoletoVPage', segment: 'boleto-v', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/facturacion-m/facturacion-m.module#FacturacionMPageModule', name: 'FacturacionMPage', segment: 'facturacion-m', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/boleto-v/boleto-v.module#BoletoVPageModule', name: 'BoletoVPage', segment: 'boleto-v', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/inicio/inicio.module#InicioPageModule', name: 'InicioPage', segment: 'inicio', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/main/main.module#MainPageModule', name: 'MainPage', segment: 'main', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/pedir-t/pedir-t.module#PedirTPageModule', name: 'PedirTPage', segment: 'pedir-t', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/perfil-e/perfil-e.module#PerfilEPageModule', name: 'PerfilEPage', segment: 'perfil-e', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/promociones/promociones.module#PromocionesPageModule', name: 'PromocionesPage', segment: 'promociones', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/recibos-m/recibos-m.module#RecibosMPageModule', name: 'RecibosMPage', segment: 'recibos-m', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/registrar-b/registrar-b.module#RegistrarBPageModule', name: 'RegistrarBPage', segment: 'registrar-b', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/registrarse/registrarse.module#RegistrarsePageModule', name: 'RegistrarsePage', segment: 'registrarse', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/registro-u/registro-u.module#RegistroUPageModule', name: 'RegistroUPage', segment: 'registro-u', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/res-password/res-password.module#ResPasswordPageModule', name: 'ResPasswordPage', segment: 'res-password', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/reservacion-b/reservacion-b.module#ReservacionBPageModule', name: 'ReservacionBPage', segment: 'reservacion-b', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/terminos-c/terminos-c.module#TerminosCPageModule', name: 'TerminosCPage', segment: 'terminos-c', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/terminos-c/terminos-c.module#TerminosCPageModule', name: 'TerminosCPage', segment: 'terminos-c', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/registrarse/registrarse.module#RegistrarsePageModule', name: 'RegistrarsePage', segment: 'registrarse', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/perfil-e/perfil-e.module#PerfilEPageModule', name: 'PerfilEPage', segment: 'perfil-e', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/res-password/res-password.module#ResPasswordPageModule', name: 'ResPasswordPage', segment: 'res-password', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
@@ -1011,15 +1085,15 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(226);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(231);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_perfil_e_perfil_e__ = __webpack_require__(123);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_perfil_e_perfil_e__ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_inicio_inicio__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_recibos_m_recibos_m__ = __webpack_require__(124);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_facturacion_m_facturacion_m__ = __webpack_require__(116);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_recibos_m_recibos_m__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_facturacion_m_facturacion_m__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_ayuda_m_ayuda_m__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_terminos_c_terminos_c__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_terminos_c_terminos_c__ = __webpack_require__(123);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_aviso_p_aviso_p__ = __webpack_require__(113);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_login_login__ = __webpack_require__(45);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_main_main__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_main_main__ = __webpack_require__(57);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1194,13 +1268,13 @@ var ListPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__angular_forms__ = __webpack_require__(13);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__registrarse_registrarse__ = __webpack_require__(57);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__registrarse_registrarse__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(89);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__angular_common_http__ = __webpack_require__(51);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6_md5_typescript__ = __webpack_require__(181);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__res_password_res_password__ = __webpack_require__(122);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__res_password_res_password__ = __webpack_require__(124);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_inicio_inicio__ = __webpack_require__(56);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__main_main__ = __webpack_require__(58);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__main_main__ = __webpack_require__(57);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -1276,6 +1350,9 @@ var LoginPage = /** @class */ (function () {
             else if (res['state'] === true) {
                 loading.dismiss();
                 _this.storage.set('confirmed', res['mail']);
+                _this.storage.set('client_n', res['name']);
+                _this.storage.set('client_sur', res['surname']);
+                _this.storage.set('pass_o', res['clave']);
                 _this.storage.set('client_name', res['name'] + ' ' + res['surname']);
                 if (res['level'] == 0) {
                     _this.storage.set('client_privilege', res['level']);
@@ -1348,9 +1425,10 @@ var LoginPage = /** @class */ (function () {
             selector: 'page-login',template:/*ion-inline-start:"C:\Users\Gusma\Documents\macparkk-app\src\pages\login\login.html"*/'<ion-header no-border>\n\n  <ion-navbar>\n\n  </ion-navbar>  \n\n</ion-header>\n\n<!--Contenido-->\n\n<ion-content id="Fondo" padding>\n\n      <ion-grid>\n\n        <p></p>\n\n        <ion-row>\n\n              <ion-col col-6 push-3><div><img src="assets/imgs/logo.png"/></div></ion-col>\n\n        </ion-row>      \n\n      </ion-grid>\n\n    <ion-list>\n\n      <ion-grid>\n\n        <form [formGroup]="data" (ngSubmit)="ingresar()" novalidate> \n\n          <ion-row align-items-center>\n\n            <ion-col col-9 id="alinacion">  \n\n              <ion-item id="usu">\n\n                <ion-label id="usu" floating>mail</ion-label>\n\n                <ion-input type="mail" formControlName="mail" required></ion-input>\n\n              </ion-item>\n\n            </ion-col>\n\n          </ion-row>\n\n          <ion-row align-items-center> \n\n            <ion-col col-9 id="alinacion">\n\n              <ion-item id="usu">\n\n                  <ion-label id="usu" floating>Contraseña</ion-label>\n\n                  <ion-input type="password"  formControlName="password" required></ion-input>\n\n              </ion-item> \n\n            </ion-col>  \n\n          </ion-row>\n\n        </form>    \n\n      </ion-grid>      \n\n    </ion-list>\n\n    <ion-grid>\n\n        <ion-row align-items-center>\n\n            <ion-col col-6 push-3 id="btnL">\n\n              <button ion-button color="primary" outline round [disabled]="data.invalid" (click)="ingresar()">Ingresar</button>\n\n            </ion-col>\n\n        </ion-row>\n\n      <ion-row align-items-center>    \n\n        <ion-col col-6 push-0>\n\n          <div><button ion-button color="grey" clear (click)="passwordR()"><p>¿Olvidaste tu usuario o contraseña?</p></button></div>\n\n        </ion-col>\n\n      </ion-row>      \n\n    </ion-grid>\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Gusma\Documents\macparkk-app\src\pages\login\login.html"*/,
         }),
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["A" /* Injectable */])(),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */], __WEBPACK_IMPORTED_MODULE_5__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__angular_forms__["a" /* FormBuilder */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__ionic_storage__["b" /* Storage */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_5__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_5__angular_common_http__["a" /* HttpClient */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _g || Object])
     ], LoginPage);
     return LoginPage;
+    var _a, _b, _c, _d, _e, _f, _g;
 }());
 
 //# sourceMappingURL=login.js.map
@@ -1366,7 +1444,7 @@ var LoginPage = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__registrar_b_registrar_b__ = __webpack_require__(117);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__reservacion_b_reservacion_b__ = __webpack_require__(118);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__boleto_v_boleto_v__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__boleto_v_boleto_v__ = __webpack_require__(116);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__registro_u_registro_u__ = __webpack_require__(119);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__promociones_promociones__ = __webpack_require__(120);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pedir_t_pedir_t__ = __webpack_require__(121);
@@ -1444,6 +1522,51 @@ var InicioPage = /** @class */ (function () {
 /***/ }),
 
 /***/ 57:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the MainPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var MainPage = /** @class */ (function () {
+    function MainPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    MainPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad MainPage');
+    };
+    MainPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-main',template:/*ion-inline-start:"C:\Users\Gusma\Documents\macparkk-app\src\pages\main\main.html"*/'<!--\n\n  Generated template for the MainPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>main</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Gusma\Documents\macparkk-app\src\pages\main\main.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
+    ], MainPage);
+    return MainPage;
+}());
+
+//# sourceMappingURL=main.js.map
+
+/***/ }),
+
+/***/ 58:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1709,51 +1832,6 @@ var RegistrarsePage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=registrarse.js.map
-
-/***/ }),
-
-/***/ 58:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MainPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the MainPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var MainPage = /** @class */ (function () {
-    function MainPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    MainPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad MainPage');
-    };
-    MainPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-main',template:/*ion-inline-start:"C:\Users\Gusma\Documents\macparkk-app\src\pages\main\main.html"*/'<!--\n\n  Generated template for the MainPage page.\n\n\n\n  See http://ionicframework.com/docs/components/#navigation for more info on\n\n  Ionic pages and navigation.\n\n-->\n\n<ion-header>\n\n\n\n  <ion-navbar>\n\n    <ion-title>main</ion-title>\n\n  </ion-navbar>\n\n\n\n</ion-header>\n\n\n\n\n\n<ion-content padding>\n\n\n\n</ion-content>\n\n'/*ion-inline-end:"C:\Users\Gusma\Documents\macparkk-app\src\pages\main\main.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
-    ], MainPage);
-    return MainPage;
-}());
-
-//# sourceMappingURL=main.js.map
 
 /***/ })
 
