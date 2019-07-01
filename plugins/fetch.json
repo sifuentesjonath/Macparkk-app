@@ -60,11 +60,11 @@
   "cordova-plugin-googleplus": {
     "source": {
       "type": "registry",
-      "id": "cordova-plugin-googleplus"
+      "id": "cordova-plugin-googleplus@5.3.2"
     },
     "is_top_level": true,
     "variables": {
-      "REVERSED_CLIENT_ID": "472463077499-vlu6pt1pc57ef5s73bail5r8of6hb09s.apps.googleusercontent.com"
+      "REVERSED_CLIENT_ID": "944251826191-1q35ujukhflbir99avqn1b5i0vfqrrol.apps.googleusercontent.com"
     }
   },
   "cordova-plugin-file-transfer": {

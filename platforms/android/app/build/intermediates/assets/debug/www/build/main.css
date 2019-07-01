@@ -36593,8 +36593,13 @@ page-perfil-e #imgP {
 }
 
 page-registrarse #iconS {
-  font-size: 90px;
+  font-size: 55px;
   block-size: 160%;
+}
+
+page-registrarse #iconMacp {
+  padding-left: 35%;
+  padding-right: 35%;
 }
 
 page-res-password p {

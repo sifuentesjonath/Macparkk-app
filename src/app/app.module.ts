@@ -26,6 +26,8 @@ import { AyudaMPage} from '../pages/ayuda-m/ayuda-m';
 import { PerfilEPage}from '../pages/perfil-e/perfil-e';
 import { TerminosCPage}   from '../pages/terminos-c/terminos-c';
 import { AvisoPPage}      from '../pages/aviso-p/aviso-p';
+//imports pencinados
+import { MainPage} from '../pages/main/main';
 //imports pages buttons menu
 import { RegistrarBPage}  from  '../pages/registrar-b/registrar-b';
 import { ReservacionBPage}from '../pages/reservacion-b/reservacion-b';
@@ -54,7 +56,8 @@ import { PedirTPage}      from '../pages/pedir-t/pedir-t';
     PromocionesPage,
     PedirTPage,
     TerminosCPage,
-    AvisoPPage
+    AvisoPPage,
+    MainPage
   ],
   imports: [
     BrowserModule,
@@ -86,7 +89,8 @@ import { PedirTPage}      from '../pages/pedir-t/pedir-t';
     PromocionesPage,
     PedirTPage,
     TerminosCPage,
-    AvisoPPage
+    AvisoPPage,
+    MainPage
   ],
   providers: [
     StatusBar,

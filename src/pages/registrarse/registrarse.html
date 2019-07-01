@@ -6,15 +6,52 @@
     <ion-grid>
       <p></p><p></p>
         <ion-row align-items-center>
-          <ion-col col-8 push-2><img src="assets/imgs/logo.png"/></ion-col>
+          <div id="iconMacp">
+            <img src="assets/imgs/logo.png"/>
+          </div>
         </ion-row>      
     </ion-grid> 
     <p></p> 
-    <ion-list>
-      <ion-grid>
+    <ion-list>      
+      <form [formGroup]="data" (ngSubmit)="check_in()" novalidate>  
+        <ion-list>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                <ion-item>
+                  <ion-label floating>Nombre</ion-label>
+                  <ion-input (click)="message(1)" type="text" formControlName="nombre" value="{{nombre}}"></ion-input>        
+                </ion-item>
+              </ion-col>
+              <ion-col>
+                <ion-item>
+                  <ion-label floating>Apellido</ion-label>
+                  <ion-input (click)="message(2)" type="text" formControlName="apellido" value="{{apellido}}"></ion-input>
+                 </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+            <ion-item>
+              <ion-label floating>Email</ion-label>
+              <ion-input (click)="message(3)" type="email" formControlName="correo"  value="{{correo}}"></ion-input>
+            </ion-item>      
+            <ion-item>
+              <ion-label floating>Contraseña</ion-label>
+              <ion-input (click)="message(4)" type="password" formControlName="password"></ion-input>
+            </ion-item>
+            <ion-item>
+              <ion-label floating>Confirmar Contraseña</ion-label>
+              <ion-input (click)="message(5)" type="password" formControlName="passwordC"></ion-input>
+            </ion-item>                 
+        </ion-list>
+        <div padding>
+          <button ion-button color="primary" outline round [disabled]="data.invalid" block>Registrarse</button>
+        </div>
+      </form>      
+      <ion-grid>       
         <ion-row align-items-center>
           <ion-col col-6 push-3 id="btnL">
-            <h3><ion-label>Registro Con:</ion-label></h3>
+            <h6><ion-label>registro con:</ion-label></h6>
           </ion-col>
         </ion-row>
       </ion-grid>

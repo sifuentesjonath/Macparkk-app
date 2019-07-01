@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { IonicPage,NavController,NavParams,MenuController} from 'ionic-angular';
 //imports pages
 import { RegistrarBPage}  from  '../registrar-b/registrar-b';
 import { ReservacionBPage}from '../reservacion-b/reservacion-b';
@@ -14,7 +14,8 @@ import { PedirTPage}      from '../pedir-t/pedir-t';
 })
 export class InicioPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private menu:MenuController,public navCtrl: NavController, public navParams: NavParams) {
+    this.menu.enable(true);
   }
 
   ionViewDidLoad() {

@@ -85,12 +85,12 @@
     <plugin name="phonegap-plugin-barcodescanner" spec="8.0.0">
         <variable name="ANDROID_SUPPORT_V4_VERSION" value="27.+" />
     </plugin>
-    <plugin name="cordova-plugin-googleplus" spec="5.3.2">
-        <variable name="REVERSED_CLIENT_ID" value="472463077499-vlu6pt1pc57ef5s73bail5r8of6hb09s.apps.googleusercontent.com" />
-        <variable name="PLAY_SERVICES_VERSION" value="11.8.0" />
-    </plugin>
     <plugin name="cordova-plugin-file-transfer" spec="1.7.1" />
     <plugin name="cordova-plugin-file" spec="6.0.1" />
     <plugin name="cordova-plugin-camera" spec="4.0.3" />
+    <plugin name="cordova-plugin-googleplus" spec="5.3.2">
+        <variable name="REVERSED_CLIENT_ID" value="944251826191-1q35ujukhflbir99avqn1b5i0vfqrrol.apps.googleusercontent.com" />
+        <variable name="PLAY_SERVICES_VERSION" value="11.8.0" />
+    </plugin>
     <engine name="android" spec="7.1.1" />
 </widget>

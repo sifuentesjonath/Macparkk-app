@@ -1,14 +1,16 @@
 //imports
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams,AlertController } from 'ionic-angular';
+import { IonicPage, NavController, NavParams,AlertController,LoadingController } from 'ionic-angular';
+import {Validators,FormBuilder,FormGroup} from '@angular/forms';
 import { HomePage } from '../home/home';
 import { RegistrarsePage } from '../registrarse/registrarse';
 import { Storage } from '@ionic/storage';//Manejo de cache
 import { HttpClient } from '@angular/common/http';//conexión
-//import {Md5} from "md5-typescript";//MD5
+import {Md5} from "md5-typescript";//MD5
 import { Injectable } from '@angular/core';
 import { ResPasswordPage } from '../res-password/res-password';//página para restablecer contraseña.
 import { InicioPage} from '../../pages/inicio/inicio';
+import { MainPage } from '../main/main';
 @IonicPage()
 @Component({
   selector: 'page-login',
@@ -16,13 +18,13 @@ import { InicioPage} from '../../pages/inicio/inicio';
 })
 @Injectable()
 export class LoginPage {
-  data:any = {};
-  nick:any = {};
-  pass:any = {};
+  private data: FormGroup;
   //constructor y declaración de uso de biblotecas
-  constructor(public navCtrl: NavController,public navParams: NavParams,private http: HttpClient,public alertCtrl:AlertController) {
-    this.data.nickname = '';
-    this.data.password = '';
+  constructor(private fb:FormBuilder,private loadingCtrl:LoadingController,private storage:Storage,public navCtrl: NavController,public navParams: NavParams,private http: HttpClient,public alertCtrl:AlertController) {
+    this.data = this.fb.group({
+      mail: ['', [Validators.required, Validators.email]],
+      password: ['', [Validators.required,Validators.pattern(/^[a-z0-9_-]{6,18}$/)]],
+    });
   }
   //metodos
   ionViewDidLoad() {
@@ -38,40 +40,71 @@ export class LoginPage {
   }
   ingresar(){
     //let currentIndex = this.navCtrl.getActive().index;
-    this.navCtrl.push(InicioPage).then(() => {
+    //this.navCtrl.push(InicioPage).then(() => {
         //this.navCtrl.remove(currentIndex);
-    });
+    //});
     //this.provedor.submit(this.data.nickname,this.data.password);
-    /*var url = 'http://citcar.relatibyte.com.mx//connectApi.php';
-    let password=Md5.init(this.data.password);
-    let body=JSON.stringify({nickname:this.data.nickname,password:password});
-    this.http.post(url,body).subscribe(res => {
-      if(res===0){
+    let loading = this.loadingCtrl.create({
+      content: 'Cargando...'
+    });
+    loading.present();
+    var url = 'http://138.68.48.252:3000/Api/users/login';
+    var password=Md5.init(this.data.value.password);
+    let body=JSON.stringify({nickname:this.data.value.mail,password:password});
+    this.http.post(url,body,{headers: { 'Content-Type': 'application/json'}}).subscribe(res => {
+      if(res['state']===false){
         let error = this.alertCtrl.create({
-          title: 'Error',
+          title: 'Aviso',
           message:"Usuario o contraseña incorrecta,por favor intentelo de nuevo",
           buttons: ['Entendido']
         });
         error.present();
+        loading.dismiss();
       }
-      else{ 
-        this.nick=res[0].cliente_nick;
-        this.pass=res[0].cliente_pass;
-        this.storage.set('Apodo',this.nick);
-        this.storage.set('confirmador',this.nick+this.pass);
-        //console.dir(nick+','+pass);
-        let currentIndex = this.navCtrl.getActive().index;
-        this.navCtrl.push(HomePage).then(() => {
-            this.navCtrl.remove(currentIndex);
+      else if(res['state']===true){ 
+        loading.dismiss();
+        this.storage.set('confirmed',res['mail']);
+        this.storage.set('client_name',res['name']+' '+res['surname']);
+        if(res['level']==0){
+          this.storage.set('client_privilege',res['level']);
+          let currentIndex = this.navCtrl.getActive().index;
+          this.navCtrl.push(InicioPage).then(() => {
+              this.navCtrl.remove(currentIndex);
+          });
+        }
+        else if(res['level']==1){
+          this.storage.set('client_privilege',res['level']);
+          let currentIndex = this.navCtrl.getActive().index;
+          this.navCtrl.push(MainPage).then(() => {
+              this.navCtrl.remove(currentIndex);
+          });
+        }
+      }
+      else if(res['verificado']==false){
+        let error = this.alertCtrl.create({
+          title: 'Aviso',
+          message:"Antes de ingresar porfavor verifique su correo.",
+          buttons: ['Entendido']
         });
-
+        error.present();
+        loading.dismiss();
+      }
+      else{
+        loading.dismiss();
       }
     },err => {
-      console.log('Error: ' + err.error);
+      const error = this.alertCtrl.create({
+        title: 'Alerta',
+        message:"Datos no obtenidos.",
+        buttons: ['Entendido']
+      });
+      error.present();
+      /*console.log('Error: ' + err.error);
       console.log('Name: ' + err.name);
       console.log('Message: ' + err.message);
-      console.log('Status: ' + err.status);
-    });*/
+      console.log('Status: ' + err.status);*/
+      loading.dismiss();
+    });
   }
   passwordR(){
     //let currentIndex = this.navCtrl.getActive().index;

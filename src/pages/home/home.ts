@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController,MenuController } from 'ionic-angular';
 //imports pages
 import { LoginPage } from '../../pages/login/login';
 import { RegistrarsePage } from '../../pages/registrarse/registrarse';
@@ -9,7 +9,8 @@ import { RegistrarsePage } from '../../pages/registrarse/registrarse';
 })
 export class HomePage {
   
-  constructor(public navCtrl: NavController) {
+  constructor(private menu:MenuController,public navCtrl: NavController) {
+    this.menu.enable(false);
   }
   iniciar(){
     let currentIndex = this.navCtrl.getActive().index;

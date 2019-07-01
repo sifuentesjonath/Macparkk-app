@@ -1,4 +1,4 @@
-#Mon Apr 08 12:04:56 CDT 2019
-base.0=C\:\\Users\\Gusma\\Documents\\Ionic\\MACP\\MACPARKK\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
+#Thu Jun 27 23:25:11 CDT 2019
+base.0=C\:\\Users\\Gusma\\Documents\\macparkk-app\\platforms\\android\\app\\build\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex
