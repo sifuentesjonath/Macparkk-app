@@ -16,6 +16,7 @@ import { TerminosCPage}   from '../pages/terminos-c/terminos-c';
 import { AvisoPPage}      from '../pages/aviso-p/aviso-p';
 import { LoginPage } from '../pages/login/login';
 import { MainPage } from '../pages/main/main';
+import { setTimeout } from 'timers';
 @Component({
   templateUrl: 'app.html'
 })
@@ -49,21 +50,33 @@ export class MyApp {
             if(res_privilege!=null){
               if(res_privilege==0){
                 this.rootPage=InicioPage;
-                splashScreen.hide(); 
+                setTimeout(() => {
+                  
+                }, 3000);
+
               }
               else if(res_privilege==1){
                 this.rootPage=MainPage;
-                splashScreen.hide(); 
+                setTimeout(() => {
+                  splashScreen.hide();  
+                },3000);
+                
               }  
             }
             else{
                 this.rootPage=LoginPage;
-                splashScreen.hide();     
+                setTimeout(() => {
+                  splashScreen.hide();  
+                },3000);
+                
               }
             }
             else{
               this.rootPage=HomePage;
-              splashScreen.hide(); 
+              setTimeout(() => {
+                splashScreen.hide();  
+              },3000);
+              
             }
           });
           }); 
