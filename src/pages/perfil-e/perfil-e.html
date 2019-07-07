@@ -18,7 +18,7 @@
               </button>
             </ion-col>
           </ion-row>
-          <form [formGroup]="data" (ngSubmit)="Save()" novalidate>   
+          <form [formGroup]="data" (ngSubmit)="save_info()" novalidate>   
             <ion-row  align-items-center>
               <ion-col col-9 id="alinacion">  
                 <ion-item id="usu">
@@ -35,16 +35,16 @@
                 </ion-item>
                 <ion-item id="usu">
                   <ion-label floating>Contraseña</ion-label>
-                  <ion-input type="password" name="password" formControlName="password" required></ion-input>
+                  <ion-input type="password" name="password"value="{{pass_f}}" formControlName="password"></ion-input>
                 </ion-item>                               
               </ion-col>  
             </ion-row>
-          </form>  
-          <ion-row align-items-center>
-            <ion-col>
-              <button ion-button color="btnB" block round id="btn" [disabled]="data.invalid">Guardar</button>
-            </ion-col>
-          </ion-row>                       
+            <ion-row align-items-center>
+                <ion-col>
+                  <button ion-button color="btnB" block round id="btn" [disabled]="data.invalid">Guardar</button>
+                </ion-col>
+              </ion-row> 
+          </form>                        
       </ion-grid>
   </ion-list>     
 </ion-content>

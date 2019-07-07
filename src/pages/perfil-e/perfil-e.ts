@@ -20,13 +20,14 @@ export class PerfilEPage {
   appm:String='';
   mail:String='';
   password_o:String='';
+  pass_f:String=null;
   imgP:any='assets/imgs/perfil.png';
   constructor(private storage:Storage,private http: HttpClient,public alertCtrl:AlertController,private fb: FormBuilder,public navCtrl:NavController,public navParams: NavParams,private camara:Camera,private transfer:FileTransfer,private file:File,private loadingCtrl:LoadingController) {
     this.data = this.fb.group({
       nombre: ['', [Validators.required]],
       appm: ['', [Validators.required, Validators.minLength(5), Validators.maxLength(25)]],
       mail: ['', [Validators.required, Validators.email]],
-      password: ['', [Validators.required,Validators.pattern(/^[a-z0-9_-]{8,18}$/)]],
+      password: ['', [Validators.required,Validators.pattern(/^[a-z0-9_-]{7,18}$/)]],
     });
   }
   //Metodos
@@ -39,14 +40,14 @@ export class PerfilEPage {
               content: 'Cargando...'
             });
             loading.present();
-            var url = 'http://138.68.48.252:3000/Api/users/edit_profile';
+            var url = 'http://138.68.48.252:3000/Api/users/consult_profile';
             //var password=Md5.init(this.data.value.password);
             let body=JSON.stringify({nombre:res_nombre,apellido:res_apellido,correo:res_confirmed});
             this.http.post(url,body,{headers: { 'Content-Type': 'application/json'}}).subscribe(res => {
               if(res['state']===false){
                 let error = this.alertCtrl.create({
                   title: 'Aviso',
-                  message:"Usuario o contraseña incorrecta,por favor intentelo de nuevo",
+                  message:"Datos incorrectos,porfavor inice perfil de nuevo.",
                   buttons: ['Entendido']
                 });
                 error.present();
@@ -58,6 +59,7 @@ export class PerfilEPage {
                 this.appm=res['surname'];
                 this.mail=res['mail'];
                 this.password_o=res_pass;
+                this.pass_f='--------';
                 //this.storage.set('confirmed',res['mail']);
                 //this.storage.set('client_name',res['name']+' '+res['surname']);
               }
@@ -105,7 +107,115 @@ export class PerfilEPage {
       // Handle error
     });
   }
-  Save(){
-
+  save_info(){
+    this.storage.get('confirmed').then((res_confirmed) => {
+        this.storage.get('pass_o').then((res_pass) => {
+          let loading = this.loadingCtrl.create({
+            content: 'Cargando...'
+          });
+          loading.present();
+          var pass_new=Md5.init(this.data.value.password);
+          if(this.data.value.password.length!=0&&this.data.value.password!=''&&this.data.value.password!=' '&&this.data.value.password!=null){
+            if(pass_new.length==0||this.data.value.password.length==0||this.data.value.password==='--------'){
+              var url = 'http://138.68.48.252:3000/Api/users/edit_profile';
+              //var password=Md5.init(this.data.value.password);
+              let body=JSON.stringify({nombre:this.data.value.nombre,apellido:this.data.value.appm,correo_o:res_confirmed,correo:this.data.value.mail});
+              this.http.post(url,body,{headers: { 'Content-Type': 'application/json'}}).subscribe(res => {
+                if(res['state']===false){
+                  let error = this.alertCtrl.create({
+                    title: 'Aviso',
+                    message:"Usuario o contraseña incorrecta,por favor intentelo de nuevo",
+                    buttons: ['Entendido']
+                  });
+                  error.present();
+                  loading.dismiss();
+                }
+                else if(res['state']===true){ 
+                  loading.dismiss();
+                  this.nombre=res['name'];
+                  this.appm=res['surname'];
+                  this.mail=res['mail'];
+                  this.password_o=res_pass;
+                  this.storage.set('confirmed',res['mail']);
+                  this.storage.set('client_n',res['name']);
+                  this.storage.set('client_sur',res['surname']);
+                  this.storage.set('client_name',res['name']+' '+res['surname']);
+                  var correct = this.alertCtrl.create({
+                    title: 'Aviso',
+                    message:"Exito al actualizar.",
+                    buttons: ['Entendido']
+                  });
+                  correct.present();
+                }
+                else{
+                  loading.dismiss();
+                }
+              },err => {
+                const error = this.alertCtrl.create({
+                  title: 'Alerta',
+                  message:"Datos no obtenidos.",
+                  buttons: ['Entendido']
+                });
+                error.present();
+                loading.dismiss();
+              });
+            }
+            else if(pass_new!=this.password_o){
+              var url = 'http://138.68.48.252:3000/Api/users/edit_profile_pass';
+              //var password=Md5.init();
+              let body=JSON.stringify({nombre:this.data.value.nombre,apellido:this.data.value.appm,correo_o:res_confirmed,correo:this.data.value.mail,password:pass_new});
+              this.http.post(url,body,{headers: { 'Content-Type': 'application/json'}}).subscribe(res => {
+                if(res['state']===false){
+                  let error = this.alertCtrl.create({
+                    title: 'Aviso',
+                    message:"Usuario o contraseña incorrecta,por favor intentelo de nuevo",
+                    buttons: ['Entendido']
+                  });
+                  error.present();
+                  loading.dismiss();
+                }
+                else if(res['state']===true){ 
+                  loading.dismiss();
+                  this.nombre=res['name'];
+                  this.appm=res['surname'];
+                  this.mail=res['mail'];
+                  this.password_o=res['pass'];
+                  this.storage.set('confirmed',res['mail']);
+                  this.storage.set('client_n',res['name']);
+                  this.storage.set('client_sur',res['surname']);
+                  this.storage.set('pass_o',res['pass']);
+                  this.storage.set('client_name',res['name']+' '+res['surname']);
+                  var correct = this.alertCtrl.create({
+                    title: 'Aviso',
+                    message:"Exito al actualizar.",
+                    buttons: ['Entendido']
+                  });
+                  correct.present();
+                }
+                else{
+                  loading.dismiss();
+                }
+              },err => {
+                const error = this.alertCtrl.create({
+                  title: 'Alerta',
+                  message:"Datos no obtenidos.",
+                  buttons: ['Entendido']
+                });
+                error.present();
+                loading.dismiss();
+              });
+            }
+          }
+          else{
+            const error = this.alertCtrl.create({
+              title: 'Alerta',
+              message:"Llene el campo de la contraseña.",
+              buttons: ['Entendido']
+            });
+            error.present();
+            loading.dismiss();
+          }
+      });
+    });
   }
 }
