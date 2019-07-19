@@ -1,15 +1,15 @@
 -- Merging decision tree log ---
 provider#org.apache.cordova.camera.FileProvider
-INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:14:9-16:20
+INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:12:9-14:20
 	android:grantUriPermissions
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:14:92-126
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:12:92-126
 	android:authorities
 		INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:14:19-66
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:12:19-66
 	android:exported
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:14:67-91
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:12:67-91
 	android:name
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:14:127-180
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:12:127-180
 manifest
 ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-25:12
 INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-25:12
@@ -138,27 +138,28 @@ ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\
 	android:name
 		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:9:27-74
 activity#com.google.zxing.client.android.CaptureActivity
-ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:12:9-311
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:15:9-311
 	android:clearTaskOnLaunch
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:12:19-51
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:15:19-51
 	android:windowSoftInputMode
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:12:261-308
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:15:261-308
 	android:exported
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:12:114-138
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:15:114-138
 	android:configChanges
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:12:52-113
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:15:52-113
 	android:theme
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:12:202-260
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:15:202-260
 	android:name
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:12:139-201
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:15:139-201
 activity#com.google.zxing.client.android.encode.EncodeActivity
-ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:13:9-112
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:16:9-112
 	android:label
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:13:19-40
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:16:19-40
 	android:name
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:13:41-109
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:16:41-109
 uses-sdk
 ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:18:5-74
+INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:18:5-74
 MERGED from [:barcodescanner-release-2.1.5:] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\barcodescanner-release-2.1.5.aar\8c0bd68ab434fe16ed76e250bcbfa90b\AndroidManifest.xml:7:5-9:41
 MERGED from [:barcodescanner-release-2.1.5:] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\barcodescanner-release-2.1.5.aar\8c0bd68ab434fe16ed76e250bcbfa90b\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\f9cd4dae0dd5bb3cead349dc8ebf0343\AndroidManifest.xml:20:5-44
@@ -209,42 +210,45 @@ MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Gusma\.gradle\cach
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\faa23d66de7210b9febd09da879a7431\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\afe283330a9b5e307f3e3b596dc010ad\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\afe283330a9b5e307f3e3b596dc010ad\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:18:5-74
 	android:targetSdkVersion
 		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:18:42-71
 	android:minSdkVersion
 		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:18:15-41
-uses-permission#android.permission.CAMERA
-ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:19:5-65
-	android:name
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:19:22-62
-uses-permission#android.permission.FLASHLIGHT
-ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:20:5-69
-	android:name
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:20:22-66
-uses-feature#android.hardware.camera
-ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:21:5-84
-	android:required
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:21:58-81
-	android:name
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:21:19-57
-uses-permission#android.permission.GET_ACCOUNTS
-ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:22:5-71
-	android:name
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:22:22-68
-uses-permission#android.permission.USE_CREDENTIALS
-ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:23:5-74
-	android:name
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:23:22-71
+		INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml
+		INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:24:5-81
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:19:5-81
 	android:name
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:24:22-78
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:19:22-78
+uses-permission#android.permission.GET_ACCOUNTS
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:20:5-71
+	android:name
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:20:22-68
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:21:5-74
+	android:name
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:21:22-71
+uses-permission#android.permission.CAMERA
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:22:5-65
+	android:name
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:22:22-62
+uses-permission#android.permission.FLASHLIGHT
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:23:5-69
+	android:name
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:23:22-66
+uses-feature#android.hardware.camera
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:24:5-84
+	android:required
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:24:58-81
+	android:name
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:24:19-57
 meta-data#android.support.FILE_PROVIDER_PATHS
-ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:15:13-123
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:13:13-123
 	android:resource
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:15:75-120
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:13:75-120
 	android:name
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:15:24-74
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:13:24-74
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
 ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\f9cd4dae0dd5bb3cead349dc8ebf0343\AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents

@@ -7,41 +7,44 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-whitelist": {
-      "PACKAGE_NAME": "io.ionic.starter"
+    "cordova-plugin-aes256-encryption": {
+      "PACKAGE_NAME": "com.MACPARKK"
     },
-    "cordova-plugin-statusbar": {
-      "PACKAGE_NAME": "io.ionic.starter"
+    "cordova-plugin-camera": {
+      "PACKAGE_NAME": "com.MACPARKK"
     },
     "cordova-plugin-device": {
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "com.MACPARKK"
     },
-    "cordova-plugin-splashscreen": {
-      "PACKAGE_NAME": "io.ionic.starter"
+    "cordova-plugin-file": {
+      "PACKAGE_NAME": "com.MACPARKK"
     },
-    "cordova-plugin-ionic-webview": {
-      "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+",
-      "PACKAGE_NAME": "io.ionic.starter"
-    },
-    "cordova-plugin-ionic-keyboard": {
-      "PACKAGE_NAME": "io.ionic.starter"
-    },
-    "phonegap-plugin-barcodescanner": {
-      "ANDROID_SUPPORT_V4_VERSION": "27.+",
-      "PACKAGE_NAME": "io.ionic.starter"
+    "cordova-plugin-file-transfer": {
+      "PACKAGE_NAME": "com.MACPARKK"
     },
     "cordova-plugin-googleplus": {
       "PLAY_SERVICES_VERSION": "11.8.0",
-      "PACKAGE_NAME": "io.ionic.starter"
+      "PACKAGE_NAME": "com.MACPARKK"
     },
-    "cordova-plugin-file-transfer": {
-      "PACKAGE_NAME": "io.ionic.starter"
+    "cordova-plugin-ionic-keyboard": {
+      "PACKAGE_NAME": "com.MACPARKK"
     },
-    "cordova-plugin-file": {
-      "PACKAGE_NAME": "io.ionic.starter"
+    "cordova-plugin-ionic-webview": {
+      "ANDROID_SUPPORT_ANNOTATIONS_VERSION": "27.+",
+      "PACKAGE_NAME": "com.MACPARKK"
     },
-    "cordova-plugin-camera": {
-      "PACKAGE_NAME": "io.ionic.starter"
+    "cordova-plugin-splashscreen": {
+      "PACKAGE_NAME": "com.MACPARKK"
+    },
+    "cordova-plugin-statusbar": {
+      "PACKAGE_NAME": "com.MACPARKK"
+    },
+    "cordova-plugin-whitelist": {
+      "PACKAGE_NAME": "com.MACPARKK"
+    },
+    "phonegap-plugin-barcodescanner": {
+      "ANDROID_SUPPORT_V4_VERSION": "27.+",
+      "PACKAGE_NAME": "com.MACPARKK"
     }
   },
   "dependent_plugins": {}

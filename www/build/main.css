@@ -36592,6 +36592,10 @@ page-perfil-e #imgP {
   height: 80px;
 }
 
+page-registrar-b form {
+  background-color: transparent;
+}
+
 page-registrarse #iconS {
   font-size: 55px;
   block-size: 160%;

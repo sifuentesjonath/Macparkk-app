@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage,NavController,NavParams,MenuController} from 'ionic-angular';
+import { Storage } from '@ionic/storage';//Manejo de cache
 //imports pages
 import { RegistrarBPage}  from  '../registrar-b/registrar-b';
 import { ReservacionBPage}from '../reservacion-b/reservacion-b';
@@ -13,13 +14,26 @@ import { PedirTPage}      from '../pedir-t/pedir-t';
   templateUrl: 'inicio.html',
 })
 export class InicioPage {
-
-  constructor(private menu:MenuController,public navCtrl: NavController, public navParams: NavParams) {
+  btnShow:boolean;
+  brnHidden:boolean;
+  constructor(private storage:Storage,private menu:MenuController,public navCtrl: NavController, public navParams: NavParams) {
     this.menu.enable(true);
+    storage.get('first_t').then((res_first) => {
+      if(res_first!=null&&res_first.leght!=0){
+        if(res_first==true){
+          this.btnShow=false;
+          this.brnHidden=true;
+        }
+        else if(res_first==false){
+          this.btnShow=true;
+          this.brnHidden=false;
+        }
+      }
+    });
   }
 
-  ionViewDidLoad() {
-    //console.log('ionViewDidLoad InicioPage');
+  //Metodos
+  ionViewCanEnter(){
   }
   rBoleto(){
     //let currentIndex = this.navCtrl.getActive().index;

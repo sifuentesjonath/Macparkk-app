@@ -1,28 +1,31 @@
 {
-  "_from": "phonegap-plugin-barcodescanner@8.0.0",
-  "_id": "phonegap-plugin-barcodescanner@8.0.0",
+  "_from": "phonegap-plugin-barcodescanner@8.1.0",
+  "_id": "phonegap-plugin-barcodescanner@8.1.0",
   "_inBundle": false,
-  "_integrity": "sha512-8mWI2bsCwkuvqCFdG7tBXdUH4X3Ay1uXpnjxCS/If8qJIbv1eaI2XMNHN+V2+YUemJoZC7chlF76YXjeQXVEFg==",
+  "_integrity": "sha512-WQCDCoH9EQ9WEn2bce+B95jbNJduilAn2Vtske8KfcYAeGu7bdFqRD7zGCLCQao62VwoEwlX0cUvbQ/am12Jwg==",
   "_location": "/phonegap-plugin-barcodescanner",
-  "_phantomChildren": {},
+  "_phantomChildren": {
+    "abbrev": "1.1.1",
+    "osenv": "0.1.5"
+  },
   "_requested": {
     "type": "version",
     "registry": true,
-    "raw": "phonegap-plugin-barcodescanner@8.0.0",
+    "raw": "phonegap-plugin-barcodescanner@8.1.0",
     "name": "phonegap-plugin-barcodescanner",
     "escapedName": "phonegap-plugin-barcodescanner",
-    "rawSpec": "8.0.0",
+    "rawSpec": "8.1.0",
     "saveSpec": null,
-    "fetchSpec": "8.0.0"
+    "fetchSpec": "8.1.0"
   },
   "_requiredBy": [
     "#USER",
     "/"
   ],
-  "_resolved": "https://registry.npmjs.org/phonegap-plugin-barcodescanner/-/phonegap-plugin-barcodescanner-8.0.0.tgz",
-  "_shasum": "bdad5454bcbb1c27b0ded0bc5c646227e7a91f06",
-  "_spec": "phonegap-plugin-barcodescanner@8.0.0",
-  "_where": "C:\\Users\\Gusma\\Documents\\Ionic\\MACP\\MACPARKK",
+  "_resolved": "https://registry.npmjs.org/phonegap-plugin-barcodescanner/-/phonegap-plugin-barcodescanner-8.1.0.tgz",
+  "_shasum": "e0d53e4e850699205e915a4b91c2f202d31f8311",
+  "_spec": "phonegap-plugin-barcodescanner@8.1.0",
+  "_where": "C:\\Users\\Gusma\\Documents\\macparkk-app",
   "author": {
     "name": "Adobe PhoneGap Team"
   },
@@ -38,6 +41,10 @@
       "windows",
       "browser"
     ]
+  },
+  "dependencies": {
+    "nopt": "^4.0.1",
+    "shelljs": "^0.8.3"
   },
   "deprecated": false,
   "description": "You can use the BarcodeScanner plugin to scan different types of barcodes (using the device's camera) and get the metadata encoded in them for processing within your application.",
@@ -82,5 +89,5 @@
   "scripts": {
     "test": "jasmine-node --color spec"
   },
-  "version": "8.0.0"
+  "version": "8.1.0"
 }

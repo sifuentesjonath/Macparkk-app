@@ -10,20 +10,56 @@
 </ion-header>
 <ion-content id="Fondo" padding>
   <ion-grid>
-    <ion-row align-items-center>
-      <ion-col id="btnL">
-        <h4>Escanea el codigo QR de tu boleto</h4>
-      </ion-col>
-    </ion-row>
-    <ion-row align-items-center>
-      <ion-col col-10 push-1 col-lg-6 push-lg-3>  
-        <ion-card *ngIf="createdCode">
-          <ngx-qrcode [qrc-value]="createdCode"></ngx-qrcode>
-          <ion-card-content>
-            <p>Equivalencia en texto: {{ createdCode }}</p>
-          </ion-card-content>
-        </ion-card>
-      </ion-col>
-    </ion-row> 
-  </ion-grid>    
+      <ion-row align-items-center>  
+          <button ion-button block outline round icon-left color="btnB" (click)="Scan()"><ion-icon name="barcode"></ion-icon>Escanear QR</button>   
+        </ion-row>
+      <form [formGroup]="data" (ngSubmit)="Save()" novalidate>  
+        <ion-list>
+          <ion-grid>
+            <ion-row>
+              <ion-col>
+                  <ion-item>
+                    <ion-label floating>Modelo</ion-label>
+                    <ion-input (click)="message(1)" type="text" formControlName="model" value="{{model}}"></ion-input>
+                  </ion-item>
+              </ion-col>
+            </ion-row>
+            <ion-row>
+              <ion-col>
+                <ion-item>
+                  <ion-label floating>Placas</ion-label>
+                  <ion-input (click)="message(2)" type="text" formControlName="plates" value="{{plates}}"></ion-input>        
+                </ion-item>
+              </ion-col>
+              <ion-col>
+                <ion-item>
+                  <ion-label floating>Año</ion-label>
+                  <ion-input (click)="message(3)" type="tel" formControlName="year" value="{{year}}"></ion-input>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+            <ion-row>  
+              <ion-col>
+                <ion-item>
+                  <ion-label floating>color</ion-label>
+                  <ion-input (click)="message(4)" type="text" formControlName="color"  value="{{color}}"></ion-input>
+                </ion-item>
+              </ion-col>
+              <ion-col>
+                <ion-item>
+                  <ion-label floating>Teléfono</ion-label>
+                  <ion-input (click)="message(5)" type="tel" formControlName="phone"  value="{{phone}}"></ion-input>
+                </ion-item>
+              </ion-col>
+            </ion-row>
+          </ion-grid>
+          <ion-item hidden>
+              <ion-input type="text" formControlName="identificator" value="{{identificator}}"></ion-input>
+          </ion-item>                      
+        </ion-list>
+         <div padding>
+          <button ion-button color="primary" outline round [disabled]="data.invalid" block>Registrar boleto</button>
+        </div>
+      </form> 
+  </ion-grid>   
 </ion-content>

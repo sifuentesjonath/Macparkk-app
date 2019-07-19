@@ -1,13 +1,6 @@
 import { Component } from '@angular/core';
-import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
-/**
- * Generated class for the PromocionesPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-
+import { IonicPage, NavController, NavParams,AlertController,LoadingController } from 'ionic-angular';
+import { HttpClient } from '@angular/common/http';//conexión
 @IonicPage()
 @Component({
   selector: 'page-promociones',
@@ -15,11 +8,17 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class PromocionesPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController,public navParams: NavParams,private http: HttpClient,public alertCtrl:AlertController) {
   }
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad PromocionesPage');
+    //Metodos
+  ionViewCanEnter(){
+    /*var url = 'http://138.68.48.252:3000/payouts';
+    let body=JSON.stringify({mensaje:'hola'});
+    this.http.post(url,body,{headers: { 'Content-Type': 'application/json'}}).subscribe(res => {
+      console.log(res);
+    },err => {
+      console.log(err);
+    });*/
   }
-
 }

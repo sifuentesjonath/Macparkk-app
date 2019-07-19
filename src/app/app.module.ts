@@ -12,6 +12,7 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { Camera } from '@ionic-native/camera';
 import { FileTransfer} from '@ionic-native/file-transfer';
 import { File } from '@ionic-native/file';
+import { AES256 } from '@ionic-native/aes-256';
 //imports page
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -100,6 +101,7 @@ import { PedirTPage}      from '../pages/pedir-t/pedir-t';
     Camera,
     FileTransfer,
     File,
+    AES256,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

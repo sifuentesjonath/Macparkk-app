@@ -44,8 +44,9 @@ export class MyApp {
       //splashScreen.hide();
       storage.get('confirmed').then((res_confirmed) => {
         storage.get('client_name').then((res_name) => {
-        storage.get('client_privilege').then((res_privilege) => {       
-          if(res_confirmed!=null){
+        storage.get('client_privilege').then((res_privilege) => { 
+        storage.get('id_client').then((res_id_client) => {        
+          if(res_confirmed!=null&&res_id_client!=null){
             if(res_privilege!=null){
               if(res_privilege==0){
                 this.rootPage=InicioPage;
@@ -65,6 +66,7 @@ export class MyApp {
               this.rootPage=HomePage;
               splashScreen.hide(); 
             }
+          });
           });
           }); 
         });

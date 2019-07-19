@@ -12,7 +12,12 @@
   <ion-grid>          
       <ion-row align-items-center>
         <ion-col>
-          <button ion-button color="btnB" block id="btn" (click)="rBoleto()">Registrar Boleto</button>
+          <button ion-button color="btnB" block id="btn" [hidden]="brnHidden" (click)="rBoleto()">Registrar Boleto</button>
+        </ion-col>
+      </ion-row>
+      <ion-row align-items-center>
+        <ion-col>
+          <button ion-button color="btnB" block id="btn" [hidden]="btnShow" (click)="boletoV()">Boleto Virtual</button>
         </ion-col>
       </ion-row>
       <ion-row align-items-center>
@@ -22,12 +27,7 @@
       </ion-row>
       <ion-row align-items-center>
         <ion-col>
-          <button ion-button color="btnB" block id="btn" (click)="boletoV()">Boleto Virtual</button>
-        </ion-col>
-      </ion-row>
-      <ion-row align-items-center>
-        <ion-col>
-          <button ion-button color="btnB" block id="btn" (click)="UpdaR()">Actualizar Registro</button>
+          <button ion-button color="btnB" block id="btn" [hidden]="btnShow" (click)="UpdaR()">Actualizar Registro</button>
         </ion-col>
       </ion-row>
       <ion-row align-items-center>
