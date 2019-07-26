@@ -24,7 +24,7 @@ export class BoletoVPage {
               this.storage.get('virtual_ticket').then((res_token_id) => {
                 if(res_confirmed.leght!=0&&res_nombre.leght!=0&&res_apellido.leght!=0&&res_pass.leght!=0&&res_id_client.leght!=0&&res_token_id.leght!=0){
                   if(res_confirmed!=null&&res_nombre!=null&&res_apellido!=null&&res_pass!=null&&res_id_client!=null&&res_token_id!=null){
-                    this.qrData=res_token_id;
+                    this.createdCode=res_token_id;
                   }
                 }
               });
