@@ -4,48 +4,6 @@ webpackJsonp([17],{
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AyudaMPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var AyudaMPage = /** @class */ (function () {
-    function AyudaMPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        this.data = {};
-        this.data.mensaje = '';
-    }
-    AyudaMPage.prototype.ionViewDidLoad = function () {
-        //console.log('ionViewDidLoad AyudaMPage');
-    };
-    AyudaMPage.prototype.enviar = function () { };
-    AyudaMPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-ayuda-m',template:/*ion-inline-start:"C:\Users\Gusma\Documents\macparkk-app\src\pages\ayuda-m\ayuda-m.html"*/'<ion-header no-border>\n\n    <ion-grid> \n\n      <ion-row>    \n\n        <ion-col col-8 id="iconLH">\n\n            <button ion-button clear show menuToggle><ion-icon name="menu" id="iconMenu"></ion-icon></button>\n\n            </ion-col>     \n\n        <ion-col col-3 id="iconRH"><div><img src="assets/imgs/logo.png" id="iconMLogo"/></div></ion-col>\n\n      </ion-row>      \n\n    </ion-grid>\n\n</ion-header>\n\n<ion-content id="Fondo" padding>  \n\n  <ion-grid>          \n\n      <ion-row align-items-center>\n\n        <ion-col id="btnL">\n\n          <h1>Soporte</h1>\n\n        </ion-col>\n\n      </ion-row>\n\n      <br>\n\n      <ion-row align-items-center>\n\n        <ion-col id="btnL">\n\n          <h4>¿En que te podemos ayudar?</h4>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n          <ion-item>\n\n            <ion-textarea rows="5" cols="250" type="text" name="mensaje" placeholder="Cuentanos..." [(ngModel)]="data.mensaje" required></ion-textarea>\n\n          </ion-item> \n\n        </ion-col>\n\n      </ion-row>\n\n      <br>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n          <button ion-button color="btnB" block round  id="btn" (click)="enviar()">Enviar</button>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col id="btnL">\n\n          <h3>Preguntas Frecuentes</h3>\n\n          <h4>Llama a soporte</h4>\n\n          <h4>01 2123 1234</h4>\n\n        </ion-col>\n\n      </ion-row>            \n\n</ion-grid>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Gusma\Documents\macparkk-app\src\pages\ayuda-m\ayuda-m.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
-    ], AyudaMPage);
-    return AyudaMPage;
-}());
-
-//# sourceMappingURL=ayuda-m.js.map
-
-/***/ }),
-
-/***/ 115:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AvisoPPage; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
@@ -84,6 +42,48 @@ var AvisoPPage = /** @class */ (function () {
 }());
 
 //# sourceMappingURL=aviso-p.js.map
+
+/***/ }),
+
+/***/ 115:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AyudaMPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AyudaMPage = /** @class */ (function () {
+    function AyudaMPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+        this.data = {};
+        this.data.mensaje = '';
+    }
+    AyudaMPage.prototype.ionViewDidLoad = function () {
+        //console.log('ionViewDidLoad AyudaMPage');
+    };
+    AyudaMPage.prototype.enviar = function () { };
+    AyudaMPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-ayuda-m',template:/*ion-inline-start:"C:\Users\Gusma\Documents\macparkk-app\src\pages\ayuda-m\ayuda-m.html"*/'<ion-header no-border>\n\n    <ion-grid> \n\n      <ion-row>    \n\n        <ion-col col-8 id="iconLH">\n\n            <button ion-button clear show menuToggle><ion-icon name="menu" id="iconMenu"></ion-icon></button>\n\n            </ion-col>     \n\n        <ion-col col-3 id="iconRH"><div><img src="assets/imgs/logo.png" id="iconMLogo"/></div></ion-col>\n\n      </ion-row>      \n\n    </ion-grid>\n\n</ion-header>\n\n<ion-content id="Fondo" padding>  \n\n  <ion-grid>          \n\n      <ion-row align-items-center>\n\n        <ion-col id="btnL">\n\n          <h1>Soporte</h1>\n\n        </ion-col>\n\n      </ion-row>\n\n      <br>\n\n      <ion-row align-items-center>\n\n        <ion-col id="btnL">\n\n          <h4>¿En que te podemos ayudar?</h4>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n          <ion-item>\n\n            <ion-textarea rows="5" cols="250" type="text" name="mensaje" placeholder="Cuentanos..." [(ngModel)]="data.mensaje" required></ion-textarea>\n\n          </ion-item> \n\n        </ion-col>\n\n      </ion-row>\n\n      <br>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n          <button ion-button color="btnB" block round  id="btn" (click)="enviar()">Enviar</button>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col id="btnL">\n\n          <h3>Preguntas Frecuentes</h3>\n\n          <h4>Llama a soporte</h4>\n\n          <h4>01 2123 1234</h4>\n\n        </ion-col>\n\n      </ion-row>            \n\n</ion-grid>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Gusma\Documents\macparkk-app\src\pages\ayuda-m\ayuda-m.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
+    ], AyudaMPage);
+    return AyudaMPage;
+}());
+
+//# sourceMappingURL=ayuda-m.js.map
 
 /***/ }),
 
@@ -571,6 +571,10 @@ var ReservacionBPage = /** @class */ (function () {
         var estancia = Math.round(difference_ms / this.one_day);
         var estanciaHoras = Math.ceil(difference_ms / this.one_hour);
         var horasExtra = estanciaHoras - (estancia * 24);
+        var month = 12;
+        var diferencia = estancia - 28;
+        var estanciaProlongada = (prices[month] + prices[diferencia]);
+        var estanciaProlHoras = (estanciaProlongada + extra[horasExtra]);
         if (estancia > 11) {
             this.spanTotal = (prices[12]) + ".00";
             this.inTotal = (prices[12]) + ".00";
@@ -596,6 +600,66 @@ var ReservacionBPage = /** @class */ (function () {
                 this.spanTotal = (prices[estancia]) + ".00";
                 this.inTotal = (prices[estancia]) + ".00";
                 this.spanRestante = (prices[estancia] - prices[1]) + ".00";
+            }
+        }
+        if (estancia > 11 && estancia <= 28) {
+            this.spanTotal = (prices[12]) + ".00";
+            this.inTotal = (prices[12]) + ".00";
+            this.spanRestante = (prices[12] - prices[1]) + ".00";
+        }
+        else {
+            if (horasExtra > 0 && horasExtra < 10) {
+                this.spanTotal = (prices[estancia] + extra[horasExtra]) + ".00";
+                this.inTotal = (prices[estancia] + extra[horasExtra]) + ".00";
+                this.spanRestante = (prices[estancia] - prices[1]) + ".00";
+            }
+            if (horasExtra >= 5 && estancia == 5 || estancia == 6 || estancia == 7 && horasExtra < 1) {
+                this.spanTotal = "600" + ".00";
+                this.inTotal = "600" + ".00";
+                this.spanRestante = (prices[estancia] - prices[1]) + ".00";
+            }
+            if (horasExtra > 9) {
+                this.spanTotal = (prices[estancia + 1]) + ".00";
+                this.inTotal = (prices[estancia + 1]) + ".00";
+                this.spanRestante = (prices[estancia] - prices[1]) + ".00";
+            }
+            if (horasExtra < 1) {
+                this.spanTotal = (prices[estancia]) + ".00";
+                this.inTotal = (prices[estancia]) + ".00";
+                this.spanRestante = (prices[estancia] - prices[1]) + ".00";
+            }
+            // What to do in case of estancia<28
+            if (estancia > 39 && estancia <= 56) {
+                this.spanTotal = (prices[month] * 2) + ".00";
+                this.inTotal = (prices[month] * 2) + ".00";
+                this.spanRestante = (prices[month] * 2 - prices[1]) + ".00";
+            }
+            if (estancia >= 29 && estancia <= 39) {
+                this.spanTotal = (estanciaProlongada) + ".00";
+                this.inTotal = (estanciaProlongada) + ".00";
+                this.spanRestante = (estanciaProlongada - prices[1]) + ".00";
+                if (horasExtra > 0 && horasExtra < 10) {
+                    this.spanTotal = (estanciaProlHoras) + ".00";
+                    this.inTotal = (estanciaProlHoras) + ".00";
+                    this.spanRestante = (estanciaProlHoras - prices[1]) + ".00";
+                }
+                if (horasExtra >= 5 && diferencia == 5 || diferencia == 6 || diferencia == 7 && horasExtra < 1) {
+                    this.spanTotal = (prices[12] + 600) + ".00";
+                    this.inTotal = (prices[12] + 600) + ".00";
+                    this.spanRestante = (prices[12] + 600 - prices[1]) + ".00";
+                }
+                if (horasExtra > 9) {
+                    this.spanTotal = (prices[month] + prices[diferencia + 1]) + ".00";
+                    this.inTotal = (prices[month] + prices[diferencia + 1]) + ".00";
+                    this.spanRestante = (prices[month] + prices[diferencia] - prices[1]) + ".00";
+                }
+                if (horasExtra < 1) {
+                    this.spanTotal = (estanciaProlongada) + ".00";
+                    this.inTotal = (estanciaProlongada) + ".00";
+                    this.spanRestante = (estanciaProlongada - prices[1]) + ".00";
+                }
+            }
+            else {
             }
         }
         /*console.log(this.date_e);
@@ -697,7 +761,13 @@ var ReservacionBPage = /** @class */ (function () {
                                                                 loading_2.dismiss();
                                                             }
                                                             else if (res['state'] === true) {
-                                                                //this.storage.set('car_data',JSON.stringify([{placas:this.data.value.plates,modelo:this.data.value.model,año:this.data.value.year,color:this.data.value.color,tel:this.data.value.phone}]));
+                                                                _this.storage.set('info_card', JSON.stringify([{
+                                                                        card_number: data.NoT,
+                                                                        holder_name: data.holderName,
+                                                                        expiration_year: data.exyear,
+                                                                        expiration_month: data.exmonth,
+                                                                        cvv2: data.cvv2,
+                                                                    }]));
                                                                 var correct = _this.alertCtrl.create({
                                                                     title: 'Perfecto',
                                                                     message: "Se le enviará un correo con los datos de la reservación.",
@@ -767,6 +837,105 @@ var ReservacionBPage = /** @class */ (function () {
                         prompt.present();
                     }
                     else {
+                        var card_1 = JSON.parse(res_card);
+                        OpenPay.setId('mxr5cuiz4h15togw5xyw');
+                        OpenPay.setApiKey('pk_04b526e095b44b06b8c817939ab78bf6');
+                        OpenPay.setSandboxMode(true);
+                        var deviceSessionId = OpenPay.deviceData.setup("formId", "deviceIdHiddenFieldName");
+                        if (OpenPay.card.validateCardNumber(card_1[0].card_number) == true) {
+                            if (OpenPay.card.validateCVC(card_1[0].cvv2, card_1[0].card_number) == true) {
+                                if (OpenPay.card.validateExpiry(card_1[0].exmonth, card_1[0].exyear)) {
+                                    var loading_3 = _this.loadingCtrl.create({
+                                        spinner: 'hide',
+                                        content: '<img src="assets/imgs/logo_openpay.png"/><br><br><br><div><h5>Pagando <img  width="50" height="13" src="assets/imgs/load.gif"/></h5></div>'
+                                    });
+                                    loading_3.present();
+                                    OpenPay.token.create({
+                                        "card_number": card_1[0].card_number,
+                                        "holder_name": card_1[0].holderName,
+                                        "expiration_year": card_1[0].exyear,
+                                        "expiration_month": card_1[0].exmonth,
+                                        "cvv2": card_1[0].cvv2,
+                                    }, function (sucess_callbak) {
+                                        var url = 'http://138.68.48.252:3000/Api/users/reservations';
+                                        var body = JSON.stringify({ mail: _this.data_client[0], nombre: card_1[0].holderName, ticket: _this.data_client[3],
+                                            fecha: _this.data.value.fechE, fecha_h: _this.data.value.hrE, fecha_s: _this.data.value.fechS, fecha_sh: _this.data.value.hrS,
+                                            costo: _this.inTotal, reservar: _this.reserva, token_id: sucess_callbak.data.id, restante: _this.spanRestante, limpiar: _this.data.value.check_y,
+                                            session_id: deviceSessionId, estancia: _this.estancia[0], estanciaHoras: _this.estancia[1], horasExtra: _this.estancia[2],
+                                            placas: _this.data_car[0], modelo: _this.data_car[1], año: _this.data_car[2], color: _this.data_car[3], tel: _this.data_car[4] });
+                                        _this.http.post(url, body, { headers: { 'Content-Type': 'application/json' } }).subscribe(function (res) {
+                                            if (res['state'] === false) {
+                                                var error = _this.alertCtrl.create({
+                                                    title: 'Aviso',
+                                                    message: "Ocurrió un problema al intentar hacer el pago.",
+                                                    buttons: ['Entendido']
+                                                });
+                                                error.present();
+                                                loading_3.dismiss();
+                                            }
+                                            else if (res['state'] === true) {
+                                                var correct = _this.alertCtrl.create({
+                                                    title: 'Perfecto',
+                                                    message: "Se le enviará un correo con los datos de la reservación.",
+                                                    buttons: ['Entendido']
+                                                });
+                                                correct.present();
+                                                loading_3.dismiss();
+                                            }
+                                            else if (res['state'] === 'exist') {
+                                                var correct = _this.alertCtrl.create({
+                                                    title: 'Avertencia',
+                                                    message: "Reservación ya hecha.",
+                                                    buttons: ['Entendido']
+                                                });
+                                                correct.present();
+                                                loading_3.dismiss();
+                                            }
+                                        }, function (err) {
+                                            var error = _this.alertCtrl.create({
+                                                title: 'Alerta',
+                                                message: "Datos no enviados.",
+                                                buttons: ['Entendido']
+                                            });
+                                            error.present();
+                                            loading_3.dismiss();
+                                        });
+                                    }, function (error_callbak) {
+                                        var error = _this.alertCtrl.create({
+                                            title: 'Alerta',
+                                            message: "Datos erroneos.",
+                                            buttons: ['Entendido']
+                                        });
+                                        error.present();
+                                        loading_3.dismiss();
+                                    });
+                                }
+                                else {
+                                    var error = _this.alertCtrl.create({
+                                        title: 'Error',
+                                        message: 'Fecha no valida.',
+                                        buttons: ['Entendido']
+                                    });
+                                    error.present();
+                                }
+                            }
+                            else {
+                                var error = _this.alertCtrl.create({
+                                    title: 'Error',
+                                    message: 'Tu número de seguridad no es valido.',
+                                    buttons: ['Entendido']
+                                });
+                                error.present();
+                            }
+                        }
+                        else {
+                            var error = _this.alertCtrl.create({
+                                title: 'Error',
+                                message: 'El número de tarjeta no valida.',
+                                buttons: ['Entendido']
+                            });
+                            error.present();
+                        }
                     }
                 });
             }
@@ -1155,6 +1324,22 @@ var PedirTPage = /** @class */ (function () {
         this.year = null;
         this.color = null;
         this.phone = null;
+        storage.get('confirmed').then(function (res_confirmed) {
+            storage.get('client_n').then(function (res_nombre) {
+                storage.get('client_sur').then(function (res_apellido) {
+                    storage.get('virtual_ticket').then(function (res_token_id) {
+                        storage.get('car_data').then(function (res_car_data) {
+                            if (res_confirmed.leght != 0 && res_nombre.leght != 0 && res_apellido.leght != 0 && res_token_id.leght != 0) {
+                                if (res_confirmed != null && res_nombre != null && res_apellido != null && res_token_id != null) {
+                                    if (res_car_data == null || res_car_data.leght == 0) {
+                                    }
+                                }
+                            }
+                        });
+                    });
+                });
+            });
+        });
     }
     //Metodos
     PedirTPage.prototype.ionViewCanEnter = function () {
@@ -1262,51 +1447,6 @@ var ResPasswordPage = /** @class */ (function () {
 /***/ }),
 
 /***/ 124:
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RecibosMPage; });
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-/**
- * Generated class for the RecibosMPage page.
- *
- * See https://ionicframework.com/docs/components/#navigation for more info on
- * Ionic pages and navigation.
- */
-var RecibosMPage = /** @class */ (function () {
-    function RecibosMPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-    }
-    RecibosMPage.prototype.ionViewDidLoad = function () {
-        console.log('ionViewDidLoad RecibosMPage');
-    };
-    RecibosMPage = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-recibos-m',template:/*ion-inline-start:"C:\Users\Gusma\Documents\macparkk-app\src\pages\recibos-m\recibos-m.html"*/'<ion-header no-border>\n\n    <ion-grid> \n\n      <ion-row>    \n\n        <ion-col col-8 id="iconLH">\n\n            <button ion-button clear show menuToggle><ion-icon name="menu" id="iconMenu"></ion-icon></button>\n\n            </ion-col>     \n\n        <ion-col col-3 id="iconRH"><div><img src="assets/imgs/logo.png" id="iconMLogo"/></div></ion-col>\n\n      </ion-row>      \n\n    </ion-grid>\n\n</ion-header>\n\n<ion-content id="Fondo" padding>  \n\n  <ion-grid>     \n\n  <ion-list>     \n\n      <ion-row align-items-center>\n\n        <ion-col id="btnL">\n\n          <h1>Recibos</h1>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>\n\n      <br><br>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>             \n\n  </ion-list>\n\n</ion-grid>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Gusma\Documents\macparkk-app\src\pages\recibos-m\recibos-m.html"*/,
-        }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
-    ], RecibosMPage);
-    return RecibosMPage;
-}());
-
-//# sourceMappingURL=recibos-m.js.map
-
-/***/ }),
-
-/***/ 125:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
@@ -1568,6 +1708,51 @@ var PerfilEPage = /** @class */ (function () {
 
 /***/ }),
 
+/***/ 125:
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return RecibosMPage; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+/**
+ * Generated class for the RecibosMPage page.
+ *
+ * See https://ionicframework.com/docs/components/#navigation for more info on
+ * Ionic pages and navigation.
+ */
+var RecibosMPage = /** @class */ (function () {
+    function RecibosMPage(navCtrl, navParams) {
+        this.navCtrl = navCtrl;
+        this.navParams = navParams;
+    }
+    RecibosMPage.prototype.ionViewDidLoad = function () {
+        console.log('ionViewDidLoad RecibosMPage');
+    };
+    RecibosMPage = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
+            selector: 'page-recibos-m',template:/*ion-inline-start:"C:\Users\Gusma\Documents\macparkk-app\src\pages\recibos-m\recibos-m.html"*/'<ion-header no-border>\n\n    <ion-grid> \n\n      <ion-row>    \n\n        <ion-col col-8 id="iconLH">\n\n            <button ion-button clear show menuToggle><ion-icon name="menu" id="iconMenu"></ion-icon></button>\n\n            </ion-col>     \n\n        <ion-col col-3 id="iconRH"><div><img src="assets/imgs/logo.png" id="iconMLogo"/></div></ion-col>\n\n      </ion-row>      \n\n    </ion-grid>\n\n</ion-header>\n\n<ion-content id="Fondo" padding>  \n\n  <ion-grid>     \n\n  <ion-list>     \n\n      <ion-row align-items-center>\n\n        <ion-col id="btnL">\n\n          <h1>Recibos</h1>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>\n\n      <br><br>\n\n      <ion-row align-items-center>\n\n        <ion-col>\n\n        </ion-col>\n\n      </ion-row>             \n\n  </ion-list>\n\n</ion-grid>\n\n</ion-content>'/*ion-inline-end:"C:\Users\Gusma\Documents\macparkk-app\src\pages\recibos-m\recibos-m.html"*/,
+        }),
+        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
+    ], RecibosMPage);
+    return RecibosMPage;
+}());
+
+//# sourceMappingURL=recibos-m.js.map
+
+/***/ }),
+
 /***/ 126:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -1635,11 +1820,11 @@ webpackEmptyAsyncContext.id = 137;
 
 var map = {
 	"../pages/aviso-p/aviso-p.module": [
-		332,
+		331,
 		16
 	],
 	"../pages/ayuda-m/ayuda-m.module": [
-		331,
+		332,
 		15
 	],
 	"../pages/boleto-v/boleto-v.module": [
@@ -1667,39 +1852,39 @@ var map = {
 		9
 	],
 	"../pages/perfil-e/perfil-e.module": [
-		341,
+		339,
 		8
 	],
 	"../pages/promociones/promociones.module": [
-		339,
+		340,
 		7
 	],
 	"../pages/recibos-m/recibos-m.module": [
-		340,
+		341,
 		6
 	],
 	"../pages/registrar-b/registrar-b.module": [
-		345,
+		342,
 		5
 	],
 	"../pages/registrarse/registrarse.module": [
-		346,
+		343,
 		4
 	],
 	"../pages/registro-u/registro-u.module": [
-		342,
+		344,
 		3
 	],
 	"../pages/res-password/res-password.module": [
-		343,
+		345,
 		2
 	],
 	"../pages/reservacion-b/reservacion-b.module": [
-		344,
+		347,
 		1
 	],
 	"../pages/terminos-c/terminos-c.module": [
-		347,
+		346,
 		0
 	]
 };
@@ -1817,12 +2002,12 @@ Object(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* pl
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_18__pages_registrarse_registrarse__ = __webpack_require__(58);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_19__pages_res_password_res_password__ = __webpack_require__(123);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_20__pages_inicio_inicio__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_recibos_m_recibos_m__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_21__pages_recibos_m_recibos_m__ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_22__pages_facturacion_m_facturacion_m__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_ayuda_m_ayuda_m__ = __webpack_require__(114);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_perfil_e_perfil_e__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_23__pages_ayuda_m_ayuda_m__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_24__pages_perfil_e_perfil_e__ = __webpack_require__(124);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_25__pages_terminos_c_terminos_c__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_aviso_p_aviso_p__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_26__pages_aviso_p_aviso_p__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_27__pages_main_main__ = __webpack_require__(59);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_28__pages_registrar_b_registrar_b__ = __webpack_require__(118);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_29__pages_reservacion_b_reservacion_b__ = __webpack_require__(119);
@@ -1908,23 +2093,23 @@ var AppModule = /** @class */ (function () {
                     scrollAssist: false
                 }, {
                     links: [
-                        { loadChildren: '../pages/ayuda-m/ayuda-m.module#AyudaMPageModule', name: 'AyudaMPage', segment: 'ayuda-m', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/aviso-p/aviso-p.module#AvisoPPageModule', name: 'AvisoPPage', segment: 'aviso-p', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/ayuda-m/ayuda-m.module#AyudaMPageModule', name: 'AyudaMPage', segment: 'ayuda-m', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/boleto-v/boleto-v.module#BoletoVPageModule', name: 'BoletoVPage', segment: 'boleto-v', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/facturacion-m/facturacion-m.module#FacturacionMPageModule', name: 'FacturacionMPage', segment: 'facturacion-m', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/inicio/inicio.module#InicioPageModule', name: 'InicioPage', segment: 'inicio', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/login/login.module#LoginPageModule', name: 'LoginPage', segment: 'login', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/main/main.module#MainPageModule', name: 'MainPage', segment: 'main', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/pedir-t/pedir-t.module#PedirTPageModule', name: 'PedirTPage', segment: 'pedir-t', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/perfil-e/perfil-e.module#PerfilEPageModule', name: 'PerfilEPage', segment: 'perfil-e', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/promociones/promociones.module#PromocionesPageModule', name: 'PromocionesPage', segment: 'promociones', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/recibos-m/recibos-m.module#RecibosMPageModule', name: 'RecibosMPage', segment: 'recibos-m', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/perfil-e/perfil-e.module#PerfilEPageModule', name: 'PerfilEPage', segment: 'perfil-e', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/registro-u/registro-u.module#RegistroUPageModule', name: 'RegistroUPage', segment: 'registro-u', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/res-password/res-password.module#ResPasswordPageModule', name: 'ResPasswordPage', segment: 'res-password', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/reservacion-b/reservacion-b.module#ReservacionBPageModule', name: 'ReservacionBPage', segment: 'reservacion-b', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/registrar-b/registrar-b.module#RegistrarBPageModule', name: 'RegistrarBPage', segment: 'registrar-b', priority: 'low', defaultHistory: [] },
                         { loadChildren: '../pages/registrarse/registrarse.module#RegistrarsePageModule', name: 'RegistrarsePage', segment: 'registrarse', priority: 'low', defaultHistory: [] },
-                        { loadChildren: '../pages/terminos-c/terminos-c.module#TerminosCPageModule', name: 'TerminosCPage', segment: 'terminos-c', priority: 'low', defaultHistory: [] }
+                        { loadChildren: '../pages/registro-u/registro-u.module#RegistroUPageModule', name: 'RegistroUPage', segment: 'registro-u', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/res-password/res-password.module#ResPasswordPageModule', name: 'ResPasswordPage', segment: 'res-password', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/terminos-c/terminos-c.module#TerminosCPageModule', name: 'TerminosCPage', segment: 'terminos-c', priority: 'low', defaultHistory: [] },
+                        { loadChildren: '../pages/reservacion-b/reservacion-b.module#ReservacionBPageModule', name: 'ReservacionBPage', segment: 'reservacion-b', priority: 'low', defaultHistory: [] }
                     ]
                 }),
                 __WEBPACK_IMPORTED_MODULE_6__ionic_storage__["a" /* IonicStorageModule */].forRoot(),
@@ -1985,13 +2170,13 @@ var AppModule = /** @class */ (function () {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(227);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__ionic_storage__ = __webpack_require__(19);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_home_home__ = __webpack_require__(232);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_perfil_e_perfil_e__ = __webpack_require__(125);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_perfil_e_perfil_e__ = __webpack_require__(124);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_inicio_inicio__ = __webpack_require__(47);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_recibos_m_recibos_m__ = __webpack_require__(124);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_recibos_m_recibos_m__ = __webpack_require__(125);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_facturacion_m_facturacion_m__ = __webpack_require__(117);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_ayuda_m_ayuda_m__ = __webpack_require__(114);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__pages_ayuda_m_ayuda_m__ = __webpack_require__(115);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__pages_terminos_c_terminos_c__ = __webpack_require__(126);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_aviso_p_aviso_p__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_12__pages_aviso_p_aviso_p__ = __webpack_require__(114);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_13__pages_login_login__ = __webpack_require__(48);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_14__pages_main_main__ = __webpack_require__(59);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {

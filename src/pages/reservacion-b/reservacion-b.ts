@@ -119,6 +119,10 @@ export class ReservacionBPage {
   var estancia = Math.round(difference_ms/this.one_day);
   var estanciaHoras = Math.ceil(difference_ms/this.one_hour);
   var horasExtra = estanciaHoras - (estancia*24);
+  const month=12;
+  const diferencia=estancia-28;
+  const estanciaProlongada=(prices[month]+prices[diferencia]);
+  const estanciaProlHoras=(estanciaProlongada+extra[horasExtra]);
   if(estancia > 11){
     this.spanTotal=(prices[12]) + ".00";
     this.inTotal=(prices[12]) + ".00";
@@ -145,6 +149,66 @@ export class ReservacionBPage {
         this.inTotal=(prices[estancia]) + ".00";
         this.spanRestante=(prices[estancia] - prices[1]) + ".00";
       }
+  }
+  if(estancia > 11 && estancia <= 28){
+    this.spanTotal=(prices[12]) + ".00";
+    this.inTotal=(prices[12]) + ".00";
+    this.spanRestante=(prices[12] - prices[1]) + ".00";
+  }
+  else{
+    if(horasExtra > 0 && horasExtra < 10){
+      this.spanTotal=(prices[estancia] + extra[horasExtra]) + ".00";
+      this.inTotal=(prices[estancia] + extra[horasExtra]) + ".00";
+      this.spanRestante=(prices[estancia] - prices[1]) + ".00";
+    }
+    if(horasExtra>= 5 && estancia == 5 || estancia==6 || estancia==7 && horasExtra < 1  ){
+      this.spanTotal="600" + ".00";
+      this.inTotal="600" + ".00";
+      this.spanRestante=(prices[estancia] - prices[1]) + ".00";
+    }
+    if(horasExtra > 9){
+      this.spanTotal=(prices[estancia + 1]) + ".00";
+      this.inTotal=(prices[estancia + 1]) + ".00";
+      this.spanRestante=(prices[estancia] - prices[1]) + ".00";
+    }
+    if(horasExtra < 1){
+      this.spanTotal=(prices[estancia]) + ".00";
+      this.inTotal=(prices[estancia]) + ".00";
+      this.spanRestante=(prices[estancia] - prices[1]) + ".00";
+    }
+    // What to do in case of estancia<28
+    if(estancia>39 && estancia<=56){
+      this.spanTotal=(prices[month]*2) + ".00";
+      this.inTotal=(prices[month]*2) + ".00";
+      this.spanRestante=(prices[month]*2 - prices[1]) + ".00";
+    }
+    if( estancia>=29&&estancia<=39){
+      this.spanTotal=(estanciaProlongada) + ".00";
+      this.inTotal=(estanciaProlongada) + ".00";
+      this.spanRestante=(estanciaProlongada - prices[1]) + ".00";
+      if(horasExtra > 0 && horasExtra < 10){
+        this.spanTotal=(estanciaProlHoras) + ".00";
+        this.inTotal=(estanciaProlHoras) + ".00";
+        this.spanRestante=(estanciaProlHoras - prices[1]) + ".00";
+      } 
+      if(horasExtra>= 5 && diferencia == 5 || diferencia==6 || diferencia==7 && horasExtra < 1  ){
+        this.spanTotal=(prices[12]+600) + ".00";
+        this.inTotal=(prices[12]+600) + ".00";
+        this.spanRestante=(prices[12]+600 - prices[1]) + ".00";
+      }
+      if(horasExtra > 9){
+        this.spanTotal=(prices[month]+prices[diferencia + 1]) + ".00";
+        this.inTotal=(prices[month]+prices[diferencia + 1]) + ".00";
+        this.spanRestante=(prices[month]+prices[diferencia] - prices[1]) + ".00";             
+      }
+      if(horasExtra < 1){
+        this.spanTotal=(estanciaProlongada) + ".00";
+        this.inTotal=(estanciaProlongada) + ".00";
+        this.spanRestante=(estanciaProlongada - prices[1]) + ".00";               
+      }                                              
+    }            
+    else{
+    }
   }
   /*console.log(this.date_e);
   console.log(this.checkin);
