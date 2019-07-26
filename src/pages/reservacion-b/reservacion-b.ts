@@ -247,7 +247,13 @@ export class ReservacionBPage {
                                 loading.dismiss();
                               }
                               else if(res['state']===true){
-                                //this.storage.set('car_data',JSON.stringify([{placas:this.data.value.plates,modelo:this.data.value.model,año:this.data.value.year,color:this.data.value.color,tel:this.data.value.phone}]));
+                                this.storage.set('info_card',JSON.stringify([{
+                                  card_number:data.NoT,
+                                  holder_name:data.holderName,
+                                  expiration_year:data.exyear,
+                                  expiration_month:data.exmonth,
+                                  cvv2:data.cvv2,
+                                }]));
                                 var correct = this.alertCtrl.create({
                                     title: 'Perfecto',
                                     message:"Se le enviará un correo con los datos de la reservación.",
@@ -319,7 +325,108 @@ export class ReservacionBPage {
             prompt.present();
           }
           else{
+            const card=JSON.parse(res_card);
+            OpenPay.setId('mxr5cuiz4h15togw5xyw');
+            OpenPay.setApiKey('pk_04b526e095b44b06b8c817939ab78bf6');
+            OpenPay.setSandboxMode(true);
+            var deviceSessionId = OpenPay.deviceData.setup("formId","deviceIdHiddenFieldName");
+            if(OpenPay.card.validateCardNumber(card[0].card_number)==true){
+              if(OpenPay.card.validateCVC(card[0].cvv2,card[0].card_number)==true){
+                if(OpenPay.card.validateExpiry(card[0].exmonth,card[0].exyear)){
+                  const loading = this.loadingCtrl.create({
+                    spinner:'hide',
+                    content: '<img src="assets/imgs/logo_openpay.png"/><br><br><br><div><h5>Pagando <img  width="50" height="13" src="assets/imgs/load.gif"/></h5></div>'
+                  });
+                  loading.present();
+                  OpenPay.token.create({
+                    "card_number":card[0].card_number,
+                    "holder_name":card[0].holderName,
+                    "expiration_year":card[0].exyear,
+                    "expiration_month":card[0].exmonth,
+                    "cvv2":card[0].cvv2,
+                  },
+                  sucess_callbak=>{
+                    const url = 'http://138.68.48.252:3000/Api/users/reservations';
+                    const body=JSON.stringify({mail:this.data_client[0],nombre:card[0].holderName,ticket:this.data_client[3],
+                      fecha:this.data.value.fechE,fecha_h:this.data.value.hrE,fecha_s:this.data.value.fechS,fecha_sh:this.data.value.hrS,
+                      costo:this.inTotal,reservar:this.reserva,token_id:sucess_callbak.data.id,restante:this.spanRestante,limpiar:this.data.value.check_y,
+                      session_id:deviceSessionId,estancia:this.estancia[0],estanciaHoras:this.estancia[1],horasExtra:this.estancia[2],
+                      placas:this.data_car[0],modelo:this.data_car[1],año:this.data_car[2],color:this.data_car[3],tel:this.data_car[4]});
+                    this.http.post(url,body,{headers: { 'Content-Type': 'application/json'}}).subscribe(res => {
+                      if(res['state']===false){
+                        var error = this.alertCtrl.create({
+                          title: 'Aviso',
+                          message:"Ocurrió un problema al intentar hacer el pago.",
+                          buttons: ['Entendido']
+                        });
+                        error.present();
+                        loading.dismiss();
+                      }
+                      else if(res['state']===true){
+                        var correct = this.alertCtrl.create({
+                            title: 'Perfecto',
+                            message:"Se le enviará un correo con los datos de la reservación.",
+                            buttons: ['Entendido']
+                        });
+                        correct.present();
+                        loading.dismiss();
+                      }
+                      else if(res['state']==='exist'){
+                        var correct = this.alertCtrl.create({
+                            title: 'Avertencia',
+                            message:"Reservación ya hecha.",
+                            buttons: ['Entendido']
+                        });
+                        correct.present();
+                        loading.dismiss();
+                      }
+                    },err => {
+                      const error = this.alertCtrl.create({
+                        title: 'Alerta',
+                        message:"Datos no enviados.",
+                        buttons: ['Entendido']
+                      });
+                      error.present();
+                      loading.dismiss();
+                    });
 
+                  },
+                  error_callbak=>{
+                    const error = this.alertCtrl.create({
+                      title: 'Alerta',
+                      message:"Datos erroneos.",
+                      buttons: ['Entendido']
+                    });
+                    error.present();
+                    loading.dismiss();
+                  });
+                }
+                else{
+                  const error = this.alertCtrl.create({
+                    title: 'Error',
+                    message:'Fecha no valida.',
+                    buttons: ['Entendido']
+                  });
+                  error.present();
+                }
+              }
+              else{
+                const error = this.alertCtrl.create({
+                  title: 'Error',
+                  message:'Tu número de seguridad no es valido.',
+                  buttons: ['Entendido']
+                });
+                error.present();
+              }
+            }
+            else{
+              const error = this.alertCtrl.create({
+                title: 'Error',
+                message:'El número de tarjeta no valida.',
+                buttons: ['Entendido']
+              });
+              error.present();
+            }
           }
         });
     }
