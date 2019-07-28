@@ -1306,6 +1306,7 @@ var __metadata = (this && this.__metadata) || function (k, v) {
  //conexión
 var PedirTPage = /** @class */ (function () {
     function PedirTPage(alertCtrl, loadingCtrl, http, toastCtrl, elementRef, fb, storage, navCtrl, navParams) {
+        var _this = this;
         this.alertCtrl = alertCtrl;
         this.loadingCtrl = loadingCtrl;
         this.http = http;
@@ -1315,25 +1316,40 @@ var PedirTPage = /** @class */ (function () {
         this.storage = storage;
         this.navCtrl = navCtrl;
         this.navParams = navParams;
-        this.img_correct = null;
+        this.img_driver = null;
         this.input_h = true;
         this.btn_h = false;
-        this.name = null;
-        this.model = null;
-        this.plates = null;
-        this.year = null;
-        this.color = null;
-        this.phone = null;
+        this.data_transport = [{}];
+        this.data_client = [{}];
         storage.get('confirmed').then(function (res_confirmed) {
             storage.get('client_n').then(function (res_nombre) {
                 storage.get('client_sur').then(function (res_apellido) {
                     storage.get('virtual_ticket').then(function (res_token_id) {
-                        storage.get('car_data').then(function (res_car_data) {
+                        storage.get('ask_transport').then(function (res_transport) {
                             if (res_confirmed.leght != 0 && res_nombre.leght != 0 && res_apellido.leght != 0 && res_token_id.leght != 0) {
                                 if (res_confirmed != null && res_nombre != null && res_apellido != null && res_token_id != null) {
-                                    if (res_car_data == null || res_car_data.leght == 0) {
+                                    if (res_transport == null || res_transport.leght == 0) {
+                                        _this.btn_h = false;
+                                        _this.data_client = [{ nombre: res_nombre, apellido: res_apellido, ticket: res_token_id }];
+                                    }
+                                    else if (res_transport != null || res_transport.leght != 0) {
+                                        _this.data_client = [{ nombre: res_nombre, apellido: res_apellido, ticket: res_token_id }];
+                                        var ask_transport = JSON.parse(res_transport);
+                                        _this.data_transport = [{
+                                                chofer: ask_transport[0].chofer, model: ask_transport[0].modelo, plates: ask_transport[0].placas,
+                                                year: ask_transport[0].año, color: ask_transport[0].color, phone: ask_transport[0].tel, state: ask_transport[0].state
+                                            }];
+                                        _this.img_driver = 'assets/imgs/logo.png';
+                                        _this.input_h = false;
+                                        _this.btn_h = true;
                                     }
                                 }
+                                else {
+                                    _this.btn_h = true;
+                                }
+                            }
+                            else {
+                                _this.btn_h = true;
                             }
                         });
                     });
@@ -1345,20 +1361,66 @@ var PedirTPage = /** @class */ (function () {
     PedirTPage.prototype.ionViewCanEnter = function () {
     };
     PedirTPage.prototype.change_img = function () {
-        this.img_correct = 'assets/imgs/perfil.png';
+        this.img_driver = 'assets/imgs/perfil.png';
     };
     PedirTPage.prototype.ask = function () {
-        this.img_correct = 'assets/imgs/logo.png';
-        this.input_h = false;
-        this.btn_h = true;
+        var _this = this;
+        var loading = this.loadingCtrl.create({
+            content: 'Cargando...'
+        });
+        loading.present();
+        var url = 'http://138.68.48.252:3000/Api/users/new_ask_transport';
+        var body = JSON.stringify({ nombre: this.data_client[0].nombre + '' + this.data_client[0].apellido, id: this.data_client[0].ticket });
+        this.http.post(url, body, { headers: { 'Content-Type': 'application/json' } }).subscribe(function (res) {
+            if (res['state'] === false) {
+                var error = _this.alertCtrl.create({
+                    title: 'Aviso',
+                    message: "Petición de transporte no admitida,reservación previamente no hecha.",
+                    buttons: ['Entendido']
+                });
+                error.present();
+                loading.dismiss();
+            }
+            else if (res['state'] === true) {
+                //this.storage.set('car_data',JSON.stringify([{placas:this.data.value.plates,modelo:this.data.value.model,año:this.data.value.year,color:this.data.value.color,tel:this.data.value.phone}]));
+                _this.input_h = false;
+                _this.btn_h = true;
+                _this.img_driver = 'assets/imgs/logo.png';
+                var correct = _this.alertCtrl.create({
+                    title: 'Perfecto',
+                    message: "Petición de transporte hecha.",
+                    buttons: ['Entendido']
+                });
+                correct.present();
+                loading.dismiss();
+            }
+            else if (res['state'] === 'exist') {
+                var error = _this.alertCtrl.create({
+                    title: 'Advertencia',
+                    message: "Petición de transporte ya en curso.",
+                    buttons: ['Entendido']
+                });
+                error.present();
+                loading.dismiss();
+            }
+        }, function (err) {
+            var error = _this.alertCtrl.create({
+                title: 'Alerta',
+                message: "Datos no enviados.",
+                buttons: ['Entendido']
+            });
+            error.present();
+            loading.dismiss();
+        });
     };
     PedirTPage = __decorate([
         Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["m" /* Component */])({
-            selector: 'page-pedir-t',template:/*ion-inline-start:"C:\Users\Gusma\Documents\macparkk-app\src\pages\pedir-t\pedir-t.html"*/'<ion-header no-border>\n\n  <ion-grid> \n\n    <ion-row>    \n\n      <ion-col col-8 id="iconLH">\n\n          <button ion-button clear show menuToggle><ion-icon name="menu" id="iconMenu"></ion-icon></button>\n\n          </ion-col>     \n\n      <ion-col col-3 id="iconRH"><div><img src="assets/imgs/logo.png" id="iconMLogo"/></div></ion-col>\n\n    </ion-row>      \n\n  </ion-grid>\n\n</ion-header>\n\n<ion-content id="Fondo" padding>\n\n  <ion-grid>\n\n    <br>\n\n    <ion-row align-items-center>\n\n      <ion-col class="profile_img_col"><img id="imgR" src="{{img_correct}}" (error)="change_img()"/></ion-col>\n\n    </ion-row>\n\n    <ion-row align-items-center [hidden]="input_h">\n\n        <ion-col class="txtC"><ion-label>Por favor espere en la sección de taxis.</ion-label></ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n  <ion-grid [hidden]="input_h">\n\n    <ion-row align-items-center [hidden]="input_h">\n\n      <ion-col>\n\n        <ion-item>\n\n          <ion-label floating>Chofer</ion-label>\n\n          <ion-input type="text" [disabled]="true" value="{{name}}"></ion-input>\n\n        </ion-item>\n\n      </ion-col>\n\n    </ion-row>  \n\n        <ion-row>\n\n          <ion-col>\n\n              <ion-item>\n\n                <ion-label floating>Modelo</ion-label>\n\n                <ion-input type="text" [disabled]="true" value="{{model}}"></ion-input>\n\n              </ion-item>\n\n          </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n          <ion-col>\n\n            <ion-item>\n\n              <ion-label floating>Placas</ion-label>\n\n              <ion-input type="text" [disabled]="true" value="{{plates}}"></ion-input>        \n\n            </ion-item>\n\n          </ion-col>\n\n          <ion-col>\n\n            <ion-item>\n\n              <ion-label floating>Año</ion-label>\n\n              <ion-input type="tel"  [disabled]="true" value="{{year}}"></ion-input>\n\n            </ion-item>\n\n          </ion-col>\n\n        </ion-row>\n\n        <ion-row>  \n\n          <ion-col>\n\n            <ion-item>\n\n              <ion-label floating>color</ion-label>\n\n              <ion-input type="text" [disabled]="true" value="{{color}}"></ion-input>\n\n            </ion-item>\n\n          </ion-col>\n\n          <ion-col>\n\n            <ion-item>\n\n              <ion-label floating>Teléfono</ion-label>\n\n              <ion-input type="tel" [disabled]="true" value="{{phone}}"></ion-input>\n\n            </ion-item>\n\n          </ion-col>\n\n        </ion-row>\n\n  </ion-grid>\n\n  <ion-grid>\n\n      <div [hidden]="btn_h" padding>\n\n          <button ion-button color="primary" outline round  block (click)="ask()">Pedir</button>\n\n      </div>\n\n  </ion-grid>    \n\n</ion-content>'/*ion-inline-end:"C:\Users\Gusma\Documents\macparkk-app\src\pages\pedir-t\pedir-t.html"*/,
+            selector: 'page-pedir-t',template:/*ion-inline-start:"C:\Users\Gusma\Documents\macparkk-app\src\pages\pedir-t\pedir-t.html"*/'<ion-header no-border>\n\n  <ion-grid> \n\n    <ion-row>    \n\n      <ion-col col-8 id="iconLH">\n\n          <button ion-button clear show menuToggle><ion-icon name="menu" id="iconMenu"></ion-icon></button>\n\n          </ion-col>     \n\n      <ion-col col-3 id="iconRH"><div><img src="assets/imgs/logo.png" id="iconMLogo"/></div></ion-col>\n\n    </ion-row>      \n\n  </ion-grid>\n\n</ion-header>\n\n<ion-content id="Fondo" padding>\n\n  <ion-grid>\n\n    <br>\n\n    <ion-row align-items-center>\n\n      <ion-col class="profile_img_col"><img id="imgR" src="{{img_driver}}" (error)="change_img()"/></ion-col>\n\n    </ion-row>\n\n    <ion-row align-items-center [hidden]="input_h">\n\n        <ion-col class="txtC"><ion-label>Por favor espere en la sección de taxis.</ion-label></ion-col>\n\n    </ion-row>\n\n  </ion-grid>\n\n  <ion-grid [hidden]="input_h">\n\n    <ion-row align-items-center [hidden]="input_h">\n\n      <ion-col>\n\n        <ion-item>\n\n          <ion-label floating>Chofer</ion-label>\n\n          <ion-input type="text" [disabled]="true" value="{{data_transport[0].chofer}}"></ion-input>\n\n        </ion-item>\n\n      </ion-col>\n\n    </ion-row>  \n\n        <ion-row>\n\n          <ion-col>\n\n              <ion-item>\n\n                <ion-label floating>Modelo</ion-label>\n\n                <ion-input type="text" [disabled]="true" value="{{data_transport[0].model}}"></ion-input>\n\n              </ion-item>\n\n          </ion-col>\n\n        </ion-row>\n\n        <ion-row>\n\n          <ion-col>\n\n            <ion-item>\n\n              <ion-label floating>Placas</ion-label>\n\n              <ion-input type="text" [disabled]="true" value="{{data_transport[0].plates}}"></ion-input>        \n\n            </ion-item>\n\n          </ion-col>\n\n          <ion-col>\n\n            <ion-item>\n\n              <ion-label floating>Año</ion-label>\n\n              <ion-input type="tel"  [disabled]="true" value="{{data_transport[0].year}}"></ion-input>\n\n            </ion-item>\n\n          </ion-col>\n\n        </ion-row>\n\n        <ion-row>  \n\n          <ion-col>\n\n            <ion-item>\n\n              <ion-label floating>color</ion-label>\n\n              <ion-input type="text" [disabled]="true" value="{{data_transport[0].color}}"></ion-input>\n\n            </ion-item>\n\n          </ion-col>\n\n          <ion-col>\n\n            <ion-item>\n\n              <ion-label floating>Teléfono</ion-label>\n\n              <ion-input type="tel" [disabled]="true" value="{{data_transport[0].phone}}"></ion-input>\n\n            </ion-item>\n\n          </ion-col>\n\n        </ion-row>\n\n  </ion-grid>\n\n  <ion-grid>\n\n      <div [hidden]="btn_h" padding>\n\n          <button ion-button color="primary" outline round  block (click)="ask()">Pedir</button>\n\n      </div>\n\n  </ion-grid>    \n\n</ion-content>'/*ion-inline-end:"C:\Users\Gusma\Documents\macparkk-app\src\pages\pedir-t\pedir-t.html"*/,
         }),
-        __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */], __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClient */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */], __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */], __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */], __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]])
+        __metadata("design:paramtypes", [typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["a" /* AlertController */]) === "function" && _a || Object, typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* LoadingController */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClient */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_4__angular_common_http__["a" /* HttpClient */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["l" /* ToastController */]) === "function" && _d || Object, typeof (_e = typeof __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_0__angular_core__["t" /* ElementRef */]) === "function" && _e || Object, typeof (_f = typeof __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__angular_forms__["a" /* FormBuilder */]) === "function" && _f || Object, typeof (_g = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_storage__["b" /* Storage */]) === "function" && _g || Object, typeof (_h = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["i" /* NavController */]) === "function" && _h || Object, typeof (_j = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["j" /* NavParams */]) === "function" && _j || Object])
     ], PedirTPage);
     return PedirTPage;
+    var _a, _b, _c, _d, _e, _f, _g, _h, _j;
 }());
 
 //# sourceMappingURL=pedir-t.js.map

@@ -12,7 +12,7 @@
   <ion-grid>
     <br>
     <ion-row align-items-center>
-      <ion-col class="profile_img_col"><img id="imgR" src="{{img_correct}}" (error)="change_img()"/></ion-col>
+      <ion-col class="profile_img_col"><img id="imgR" src="{{img_driver}}" (error)="change_img()"/></ion-col>
     </ion-row>
     <ion-row align-items-center [hidden]="input_h">
         <ion-col class="txtC"><ion-label>Por favor espere en la sección de taxis.</ion-label></ion-col>
@@ -23,7 +23,7 @@
       <ion-col>
         <ion-item>
           <ion-label floating>Chofer</ion-label>
-          <ion-input type="text" [disabled]="true" value="{{name}}"></ion-input>
+          <ion-input type="text" [disabled]="true" value="{{data_transport[0].chofer}}"></ion-input>
         </ion-item>
       </ion-col>
     </ion-row>  
@@ -31,7 +31,7 @@
           <ion-col>
               <ion-item>
                 <ion-label floating>Modelo</ion-label>
-                <ion-input type="text" [disabled]="true" value="{{model}}"></ion-input>
+                <ion-input type="text" [disabled]="true" value="{{data_transport[0].model}}"></ion-input>
               </ion-item>
           </ion-col>
         </ion-row>
@@ -39,13 +39,13 @@
           <ion-col>
             <ion-item>
               <ion-label floating>Placas</ion-label>
-              <ion-input type="text" [disabled]="true" value="{{plates}}"></ion-input>        
+              <ion-input type="text" [disabled]="true" value="{{data_transport[0].plates}}"></ion-input>        
             </ion-item>
           </ion-col>
           <ion-col>
             <ion-item>
               <ion-label floating>Año</ion-label>
-              <ion-input type="tel"  [disabled]="true" value="{{year}}"></ion-input>
+              <ion-input type="tel"  [disabled]="true" value="{{data_transport[0].year}}"></ion-input>
             </ion-item>
           </ion-col>
         </ion-row>
@@ -53,13 +53,13 @@
           <ion-col>
             <ion-item>
               <ion-label floating>color</ion-label>
-              <ion-input type="text" [disabled]="true" value="{{color}}"></ion-input>
+              <ion-input type="text" [disabled]="true" value="{{data_transport[0].color}}"></ion-input>
             </ion-item>
           </ion-col>
           <ion-col>
             <ion-item>
               <ion-label floating>Teléfono</ion-label>
-              <ion-input type="tel" [disabled]="true" value="{{phone}}"></ion-input>
+              <ion-input type="tel" [disabled]="true" value="{{data_transport[0].phone}}"></ion-input>
             </ion-item>
           </ion-col>
         </ion-row>
