@@ -16,6 +16,8 @@ import { TerminosCPage}   from '../pages/terminos-c/terminos-c';
 import { AvisoPPage}      from '../pages/aviso-p/aviso-p';
 import { LoginPage } from '../pages/login/login';
 import { MainPage } from '../pages/main/main';
+import { DriverMainPage } from '../pages/driver-main/driver-main';
+import { DriverTransportPage } from '../pages/driver-transport/driver-transport';
 @Component({
   templateUrl: 'app.html'
 })
@@ -23,8 +25,9 @@ export class MyApp {
   @ViewChild(Nav) nav: Nav;
 
   rootPage:any;
-
+  privilege:any='';
   pages: Array<{title: string, component: any}>;
+  driver_pages: Array<{title: string, component: any}>;
   constructor(private storage:Storage,public platform: Platform, public statusBar: StatusBar, public splashScreen: SplashScreen) {
     //this.initializeApp();
     // used for an example of ngFor and navigation
@@ -37,6 +40,13 @@ export class MyApp {
       { title: 'Terminos y Condiciones', component:TerminosCPage },
       { title: 'Aviso de Privacidad',    component:AvisoPPage }
     ];
+    this.driver_pages = [
+      { title: 'Perfil',component:PerfilEPage},
+      { title: 'Inicio',component:DriverMainPage},
+      { title: 'Automóvil',component:DriverTransportPage},
+      { title: 'Terminos y Condiciones', component:TerminosCPage },
+      { title: 'Aviso de Privacidad',    component:AvisoPPage }
+    ];
     platform.ready().then(() => {
       // Okay, so the platform is ready and our plugins are available.
       // Here you can do any higher level native things you might need.
@@ -45,7 +55,8 @@ export class MyApp {
       storage.get('confirmed').then((res_confirmed) => {
         storage.get('client_name').then((res_name) => {
         storage.get('client_privilege').then((res_privilege) => { 
-        storage.get('id_client').then((res_id_client) => {        
+        storage.get('id_client').then((res_id_client) => {
+          this.privilege=res_privilege;        
           if(res_confirmed!=null&&res_id_client!=null){
             if(res_privilege!=null){
               if(res_privilege==0){
@@ -55,7 +66,11 @@ export class MyApp {
               else if(res_privilege==1){
                 this.rootPage=MainPage;
                 splashScreen.hide(); 
-              }  
+              }
+              else if(res_privilege==2){
+                this.rootPage=DriverMainPage;
+                splashScreen.hide(); 
+              }   
             }
             else{
                 this.rootPage=LoginPage;
@@ -72,13 +87,6 @@ export class MyApp {
         });
     });
   }
-
-  /*initializeApp() {
-    this.platform.ready().then(() => {
-      this.statusBar.styleDefault();
-      this.splashScreen.hide();
-    });
-  }*/
   //Linque del Menú Toggle
   openPage(x) {
     if(x===7){
@@ -87,6 +95,15 @@ export class MyApp {
     }
     else{
       this.nav.setRoot(this.pages[x].component);
+    }
+  }
+  DriverOpenPage(x) {
+    if(x===5){
+      this.storage.clear();
+      this.nav.setRoot(HomePage);
+    }
+    else{
+      this.nav.setRoot(this.driver_pages[x].component);
     }
   }
 }

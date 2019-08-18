@@ -10,12 +10,24 @@ INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\ma
 		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:12:67-91
 	android:name
 		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:12:127-180
+provider#de.appplant.cordova.plugin.notification.util.AssetProvider
+INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:17:9-19:20
+	android:grantUriPermissions
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:17:92-126
+	android:authorities
+		INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:17:19-66
+	android:exported
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:17:67-91
+	android:name
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:17:127-200
 manifest
-ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-25:12
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-32:12
 MERGED from [:barcodescanner-release-2.1.5:] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\barcodescanner-release-2.1.5.aar\8c0bd68ab434fe16ed76e250bcbfa90b\AndroidManifest.xml:2:1-14:12
+MERGED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:2:1-52:12
 MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\f9cd4dae0dd5bb3cead349dc8ebf0343\AndroidManifest.xml:17:1-39:12
 MERGED from [com.google.android.gms:play-services-identity:11.8.0] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.8.0.aar\3ef2678bca62b0dbcc867dad04c538d9\AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.gms:play-services-auth-api-phone:11.8.0] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\play-services-auth-api-phone-11.8.0.aar\0e31aed41ed5f7d92da38816d64fa1d7\AndroidManifest.xml:2:1-7:12
@@ -40,9 +52,9 @@ MERGED from [android.arch.lifecycle:runtime:1.1.0] C:\Users\Gusma\.gradle\caches
 MERGED from [android.arch.lifecycle:livedata-core:1.1.0] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\livedata-core-1.1.0.aar\ba92533407236f2b5c08da5599d1657b\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\faa23d66de7210b9febd09da879a7431\AndroidManifest.xml:17:1-22:12
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\afe283330a9b5e307f3e3b596dc010ad\AndroidManifest.xml:17:1-22:12
-INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-25:12
-INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-25:12
+INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-32:12
+INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:2:1-32:12
 	package
 		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:2:98-120
 		INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml
@@ -78,7 +90,7 @@ ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\
 	android:name
 		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:4:22-64
 application
-ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:5:5-17:19
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:5:5-23:19
 MERGED from [:barcodescanner-release-2.1.5:] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\barcodescanner-release-2.1.5.aar\8c0bd68ab434fe16ed76e250bcbfa90b\AndroidManifest.xml:11:5-12:19
 MERGED from [:barcodescanner-release-2.1.5:] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\barcodescanner-release-2.1.5.aar\8c0bd68ab434fe16ed76e250bcbfa90b\AndroidManifest.xml:11:5-12:19
 MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\f9cd4dae0dd5bb3cead349dc8ebf0343\AndroidManifest.xml:22:5-37:19
@@ -157,11 +169,35 @@ ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\
 		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:16:19-40
 	android:name
 		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:16:41-109
+receiver#de.appplant.cordova.plugin.localnotification.TriggerReceiver
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:20:9-122
+	android:exported
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:20:19-43
+	android:name
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:20:44-119
+receiver#de.appplant.cordova.plugin.localnotification.ClearReceiver
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:21:9-120
+	android:exported
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:21:19-43
+	android:name
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:21:44-117
+activity#de.appplant.cordova.plugin.localnotification.ClickReceiver
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:22:9-205
+	android:launchMode
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:22:44-79
+	android:exported
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:22:19-43
+	android:theme
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:22:154-202
+	android:name
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:22:80-153
 uses-sdk
-ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:18:5-74
-INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:18:5-74
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:24:5-74
+INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:24:5-74
 MERGED from [:barcodescanner-release-2.1.5:] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\barcodescanner-release-2.1.5.aar\8c0bd68ab434fe16ed76e250bcbfa90b\AndroidManifest.xml:7:5-9:41
 MERGED from [:barcodescanner-release-2.1.5:] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\barcodescanner-release-2.1.5.aar\8c0bd68ab434fe16ed76e250bcbfa90b\AndroidManifest.xml:7:5-9:41
+MERGED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:7:5-9:41
+MERGED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\f9cd4dae0dd5bb3cead349dc8ebf0343\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\f9cd4dae0dd5bb3cead349dc8ebf0343\AndroidManifest.xml:20:5-44
 MERGED from [com.google.android.gms:play-services-identity:11.8.0] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\play-services-identity-11.8.0.aar\3ef2678bca62b0dbcc867dad04c538d9\AndroidManifest.xml:20:5-44
@@ -210,45 +246,113 @@ MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Gusma\.gradle\cach
 MERGED from [android.arch.lifecycle:viewmodel:1.1.0] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\viewmodel-1.1.0.aar\faa23d66de7210b9febd09da879a7431\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\afe283330a9b5e307f3e3b596dc010ad\AndroidManifest.xml:20:5-44
 MERGED from [android.arch.core:runtime:1.1.0] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\runtime-1.1.0.aar\afe283330a9b5e307f3e3b596dc010ad\AndroidManifest.xml:20:5-44
-INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:18:5-74
+INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:24:5-74
 	android:targetSdkVersion
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:18:42-71
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:24:42-71
 	android:minSdkVersion
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:18:15-41
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:24:15-41
 		INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:19:5-81
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:25:5-81
 	android:name
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:19:22-78
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:25:22-78
 uses-permission#android.permission.GET_ACCOUNTS
-ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:20:5-71
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:26:5-71
 	android:name
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:20:22-68
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:26:22-68
 uses-permission#android.permission.USE_CREDENTIALS
-ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:21:5-74
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:27:5-74
 	android:name
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:21:22-71
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:27:22-71
 uses-permission#android.permission.CAMERA
-ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:22:5-65
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:28:5-65
 	android:name
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:22:22-62
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:28:22-62
 uses-permission#android.permission.FLASHLIGHT
-ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:23:5-69
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:29:5-69
 	android:name
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:23:22-66
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:29:22-66
 uses-feature#android.hardware.camera
-ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:24:5-84
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:30:5-84
 	android:required
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:24:58-81
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:30:58-81
 	android:name
-		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:24:19-57
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:30:19-57
+uses-permission#android.permission.WAKE_LOCK
+ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:31:5-68
+	android:name
+		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:31:22-65
 meta-data#android.support.FILE_PROVIDER_PATHS
 ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:13:13-123
 	android:resource
 		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:13:75-120
 	android:name
 		ADDED from C:\Users\Gusma\Documents\macparkk-app\platforms\android\app\src\main\AndroidManifest.xml:13:24-74
+uses-permission#com.sec.android.provider.badge.permission.READ
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:19:5-86
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:19:22-83
+uses-permission#com.sec.android.provider.badge.permission.WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:20:5-87
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:20:22-84
+uses-permission#com.htc.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:23:5-81
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:23:22-78
+uses-permission#com.htc.launcher.permission.UPDATE_SHORTCUT
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:24:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:24:22-80
+uses-permission#com.sonyericsson.home.permission.BROADCAST_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:27:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:27:22-85
+uses-permission#com.sonymobile.home.permission.PROVIDER_INSERT_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:28:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:28:22-89
+uses-permission#com.anddoes.launcher.permission.UPDATE_COUNT
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:31:5-84
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:31:22-81
+uses-permission#com.majeur.launcher.permission.UPDATE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:34:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:34:22-80
+uses-permission#com.huawei.android.launcher.permission.CHANGE_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:37:5-91
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:37:22-88
+uses-permission#com.huawei.android.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:38:5-92
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:38:22-89
+uses-permission#com.huawei.android.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:39:5-93
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:39:22-90
+uses-permission#android.permission.READ_APP_BADGE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:42:5-73
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:42:22-70
+uses-permission#com.oppo.launcher.permission.READ_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:45:5-82
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:45:22-79
+uses-permission#com.oppo.launcher.permission.WRITE_SETTINGS
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:46:5-83
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:46:22-80
+uses-permission#me.everything.badger.permission.BADGE_COUNT_READ
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:49:5-88
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:49:22-85
+uses-permission#me.everything.badger.permission.BADGE_COUNT_WRITE
+ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:50:5-89
+	android:name
+		ADDED from [me.leolin:ShortcutBadger:1.1.22] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\ShortcutBadger-1.1.22.aar\548f7af5325ed05478a974bc0da8d1dd\AndroidManifest.xml:50:22-86
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
 ADDED from [com.google.android.gms:play-services-auth:11.8.0] C:\Users\Gusma\.gradle\caches\transforms-1\files-1.1\play-services-auth-11.8.0.aar\f9cd4dae0dd5bb3cead349dc8ebf0343\AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents

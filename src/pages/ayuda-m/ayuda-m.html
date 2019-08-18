@@ -21,19 +21,21 @@
           <h4>¿En que te podemos ayudar?</h4>
         </ion-col>
       </ion-row>
-      <ion-row align-items-center>
-        <ion-col>
-          <ion-item>
-            <ion-textarea rows="5" cols="250" type="text" name="mensaje" placeholder="Cuentanos..." [(ngModel)]="data.mensaje" required></ion-textarea>
-          </ion-item> 
-        </ion-col>
-      </ion-row>
-      <br>
-      <ion-row align-items-center>
-        <ion-col>
-          <button ion-button color="btnB" block round  id="btn" (click)="enviar()">Enviar</button>
-        </ion-col>
-      </ion-row>
+      <form [formGroup]="data" (ngSubmit)="sumit()" novalidate>  
+        <ion-row align-items-center>
+          <ion-col>
+            <ion-item>
+              <ion-textarea rows="5" cols="250" type="text" name="mensaje" placeholder="Cuentanos..." formControlName="mensaje" required></ion-textarea>
+            </ion-item> 
+          </ion-col>
+        </ion-row>
+        <br>
+        <ion-row align-items-center>
+          <ion-col>
+            <button ion-button color="btnB" block round  id="btn" [disabled]="data.invalid">Enviar</button>
+          </ion-col>
+        </ion-row>
+        </form>
       <ion-row align-items-center>
         <ion-col id="btnL">
           <h3>Preguntas Frecuentes</h3>

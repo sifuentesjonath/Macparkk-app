@@ -3,7 +3,6 @@ import { IonicPage, NavController,NavParams,ToastController,LoadingController,Al
 import { Storage } from '@ionic/storage';//Manejo de cache
 import {Validators, FormBuilder, FormGroup } from '@angular/forms';
 import { HttpClient } from '@angular/common/http';//conexión
-import { AES256 } from '@ionic-native/aes-256';
 declare var OpenPay: any;
 @IonicPage()
 @Component({
@@ -27,7 +26,7 @@ export class ReservacionBPage {
   data_client:Object=[];
   data_car:Object=[];
   conten:Boolean=false;
-  constructor(private aes256: AES256,private alertCtrl:AlertController,private loadingCtrl:LoadingController,private http: HttpClient,private toastCtrl:ToastController,private elementRef:ElementRef,private fb: FormBuilder,private storage:Storage,public navCtrl: NavController, public navParams: NavParams) {
+  constructor(private alertCtrl:AlertController,private loadingCtrl:LoadingController,private http: HttpClient,private toastCtrl:ToastController,private elementRef:ElementRef,private fb: FormBuilder,private storage:Storage,public navCtrl: NavController, public navParams: NavParams) {
     this.data = this.fb.group({
       fechE: ['', [Validators.required]],
       hrE: ['', [Validators.required]],

@@ -7,9 +7,6 @@
     "files": {}
   },
   "installed_plugins": {
-    "cordova-plugin-aes256-encryption": {
-      "PACKAGE_NAME": "com.MACPARKK"
-    },
     "cordova-plugin-camera": {
       "PACKAGE_NAME": "com.MACPARKK"
     },
@@ -45,7 +42,14 @@
     "phonegap-plugin-barcodescanner": {
       "ANDROID_SUPPORT_V4_VERSION": "27.+",
       "PACKAGE_NAME": "com.MACPARKK"
+    },
+    "cordova-plugin-local-notification": {
+      "PACKAGE_NAME": "com.MACPARKK"
     }
   },
-  "dependent_plugins": {}
+  "dependent_plugins": {
+    "cordova-plugin-badge": {
+      "PACKAGE_NAME": "com.MACPARKK"
+    }
+  }
 }

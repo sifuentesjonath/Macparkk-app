@@ -448,4 +448,5 @@ int styleable SignInButton_colorScheme 1
 int styleable SignInButton_scopeUris 2
 int xml camera_provider_paths 0x7f100000
 int xml config 0x7f100001
-int xml preferences 0x7f100002
+int xml localnotification_provider_paths 0x7f100002
+int xml preferences 0x7f100003

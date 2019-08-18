@@ -91,8 +91,9 @@ ext {
 }
 
 // PLUGIN GRADLE EXTENSIONS START
-apply from: "../cordova-plugin-aes256-encryption/MACPARKK-plugin.gradle"
 apply from: "../phonegap-plugin-barcodescanner/MACPARKK-barcodescanner.gradle"
+apply from: "../cordova-plugin-badge/MACPARKK-badge.gradle"
+apply from: "../cordova-plugin-local-notification/MACPARKK-localnotification.gradle"
 // PLUGIN GRADLE EXTENSIONS END
 
 def hasBuildExtras1 = file('build-extras.gradle').exists()
@@ -272,6 +273,7 @@ dependencies {
     compile "com.google.android.gms:play-services-identity:11.8.0"
     compile "com.android.support:support-annotations:27.+"
     compile "com.android.support:support-v4:27.+"
+    compile "com.android.support:support-v4:26.+"
     // SUB-PROJECT DEPENDENCIES END
 }
 

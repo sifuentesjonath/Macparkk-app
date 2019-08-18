@@ -11,6 +11,8 @@ import { Injectable } from '@angular/core';
 import { ResPasswordPage } from '../res-password/res-password';//página para restablecer contraseña.
 import { InicioPage} from '../../pages/inicio/inicio';
 import { MainPage } from '../main/main';
+import { DriverMainPage } from '../driver-main/driver-main';
+import { MyApp } from '../../app/app.component';
 @IonicPage()
 @Component({
   selector: 'page-login',
@@ -63,25 +65,53 @@ export class LoginPage {
       }
       else if(res['state']===true){ 
         loading.dismiss();
-        this.storage.set('confirmed',res['mail']);
-        this.storage.set('client_n',res['name']);
-        this.storage.set('client_sur',res['surname']);
-        this.storage.set('id_client',res[".ID"]);
-        this.storage.set('pass_o',res['clave']);
-        this.storage.set('first_t',res['ft']);
-        this.storage.set('virtual_ticket',res['ticket']);
-        this.storage.set('client_name',res['name']+' '+res['surname']);
         if(res['level']==0){
+          this.storage.set('confirmed',res['mail']);
+          this.storage.set('client_n',res['name']);
+          this.storage.set('client_sur',res['surname']);
+          this.storage.set('id_client',res[".ID"]);
+          this.storage.set('pass_o',res['clave']);
+          this.storage.set('first_t',res['ft']);
+          this.storage.set('virtual_ticket',res['ticket']);
+          this.storage.set('client_name',res['name']+' '+res['surname']);
           this.storage.set('client_privilege',res['level']);
           let currentIndex = this.navCtrl.getActive().index;
-          this.navCtrl.push(InicioPage).then(() => {
+          this.navCtrl.push(MyApp).then(() => {
               this.navCtrl.remove(currentIndex);
           });
         }
         else if(res['level']==1){
+          this.storage.set('confirmed',res['mail']);
+          this.storage.set('client_n',res['name']);
+          this.storage.set('client_sur',res['surname']);
+          this.storage.set('id_client',res[".ID"]);
+          this.storage.set('pass_o',res['clave']);
+          this.storage.set('first_t',res['ft']);
+          this.storage.set('virtual_ticket',res['ticket']);
+          this.storage.set('client_name',res['name']+' '+res['surname']);
           this.storage.set('client_privilege',res['level']);
           let currentIndex = this.navCtrl.getActive().index;
-          this.navCtrl.push(MainPage).then(() => {
+          this.navCtrl.push(MyApp).then(() => {
+              this.navCtrl.remove(currentIndex);
+          });
+        }
+        else if(res['level']==2){
+          this.storage.set('confirmed',res['mail']);
+          this.storage.set('client_n',res['name']);
+          this.storage.set('client_sur',res['surname']);
+          this.storage.set('id_client',res[".ID"]);
+          this.storage.set('pass_o',res['clave']);
+          this.storage.set('client_name',res['name']+' '+res['surname']);
+          this.storage.set('client_privilege',res['level']);
+          const driver=JSON.stringify([{model:res['modelo'],plates:res['placas'],year:res['año'],color:res['color'],phone:res['tel']}]);
+          if(driver=='[{}]'){
+            this.storage.set('driver-transport',null);
+          }
+          else{
+            this.storage.set('driver-transport',driver); 
+          }
+          let currentIndex = this.navCtrl.getActive().index;
+          this.navCtrl.push(MyApp).then(() => {
               this.navCtrl.remove(currentIndex);
           });
         }

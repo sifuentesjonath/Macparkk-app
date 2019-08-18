@@ -4,6 +4,8 @@ import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen'; 
 import { HttpClientModule } from '@angular/common/http';
+import { ProgressBarModule} from "angular-progress-bar"
+import { LocalNotifications } from '@ionic-native/local-notifications';
 //imports de biblotecas especiales
 import { IonicStorageModule } from '@ionic/storage';
 import { GooglePlus } from '@ionic-native/google-plus';
@@ -12,7 +14,8 @@ import { BarcodeScanner } from '@ionic-native/barcode-scanner';
 import { Camera } from '@ionic-native/camera';
 import { FileTransfer} from '@ionic-native/file-transfer';
 import { File } from '@ionic-native/file';
-import { AES256 } from '@ionic-native/aes-256';
+import { SocketIoModule,SocketIoConfig } from 'ng-socket-io';
+const config: SocketIoConfig = { url:'138.68.48.252:8080', options: {} }; 
 //imports page
 import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
@@ -27,8 +30,11 @@ import { AyudaMPage} from '../pages/ayuda-m/ayuda-m';
 import { PerfilEPage}from '../pages/perfil-e/perfil-e';
 import { TerminosCPage}   from '../pages/terminos-c/terminos-c';
 import { AvisoPPage}      from '../pages/aviso-p/aviso-p';
-//imports pencinados
+//imports pencionados
 import { MainPage} from '../pages/main/main';
+//imports drivers
+import { DriverMainPage} from '../pages/driver-main/driver-main';
+import { DriverTransportPage} from '../pages/driver-transport/driver-transport';
 //imports pages buttons menu
 import { RegistrarBPage}  from  '../pages/registrar-b/registrar-b';
 import { ReservacionBPage}from '../pages/reservacion-b/reservacion-b';
@@ -58,7 +64,9 @@ import { PedirTPage}      from '../pages/pedir-t/pedir-t';
     PedirTPage,
     TerminosCPage,
     AvisoPPage,
-    MainPage
+    MainPage,
+    DriverMainPage,
+    DriverTransportPage
   ],
   imports: [
     BrowserModule,
@@ -67,8 +75,10 @@ import { PedirTPage}      from '../pages/pedir-t/pedir-t';
       scrollAssist: false
     }),
     IonicStorageModule.forRoot(),
+    SocketIoModule.forRoot(config),
     HttpClientModule,
-    NgxQRCodeModule
+    NgxQRCodeModule,
+    ProgressBarModule
   ],
   bootstrap: [IonicApp],
   entryComponents: [
@@ -91,7 +101,9 @@ import { PedirTPage}      from '../pages/pedir-t/pedir-t';
     PedirTPage,
     TerminosCPage,
     AvisoPPage,
-    MainPage
+    MainPage,
+    DriverMainPage,
+    DriverTransportPage
   ],
   providers: [
     StatusBar,
@@ -100,8 +112,8 @@ import { PedirTPage}      from '../pages/pedir-t/pedir-t';
     BarcodeScanner,
     Camera,
     FileTransfer,
+    LocalNotifications,
     File,
-    AES256,
     {provide: ErrorHandler, useClass: IonicErrorHandler}
   ]
 })

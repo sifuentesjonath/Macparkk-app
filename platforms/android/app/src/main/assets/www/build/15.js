@@ -1,14 +1,14 @@
 webpackJsonp([15],{
 
-/***/ 332:
+/***/ 386:
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AyudaMPageModule", function() { return AyudaMPageModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "DriverMainPageModule", function() { return DriverMainPageModule; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(7);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ayuda_m__ = __webpack_require__(115);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(6);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__driver_main__ = __webpack_require__(132);
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
     if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -18,23 +18,23 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
 
 
 
-var AyudaMPageModule = /** @class */ (function () {
-    function AyudaMPageModule() {
+var DriverMainPageModule = /** @class */ (function () {
+    function DriverMainPageModule() {
     }
-    AyudaMPageModule = __decorate([
-        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["I" /* NgModule */])({
+    DriverMainPageModule = __decorate([
+        Object(__WEBPACK_IMPORTED_MODULE_0__angular_core__["NgModule"])({
             declarations: [
-                __WEBPACK_IMPORTED_MODULE_2__ayuda_m__["a" /* AyudaMPage */],
+                __WEBPACK_IMPORTED_MODULE_2__driver_main__["a" /* DriverMainPage */],
             ],
             imports: [
-                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__ayuda_m__["a" /* AyudaMPage */]),
+                __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* IonicPageModule */].forChild(__WEBPACK_IMPORTED_MODULE_2__driver_main__["a" /* DriverMainPage */]),
             ],
         })
-    ], AyudaMPageModule);
-    return AyudaMPageModule;
+    ], DriverMainPageModule);
+    return DriverMainPageModule;
 }());
 
-//# sourceMappingURL=ayuda-m.module.js.map
+//# sourceMappingURL=driver-main.module.js.map
 
 /***/ })
 
